@@ -1,6 +1,6 @@
 # Unit 4 Assignment Proposals (Chapters 10–12)
 
-*Draft proposals for Alex to judge. They are aimed at an upper-division undergraduate SE course. The final unit is about design at every scale: architecture and engineering (Shaw), the human and incremental side of building software (Beck), and concepts and specification (Jackson). Several proposals work as capstones that draw on the whole book. Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A comparison and suggested pairing is at the end.*
+*Assignment designs for instructors to choose from. They are aimed at an upper-division undergraduate SE course. The final unit is about design at every scale: architecture and engineering (Shaw), the human and incremental side of building software (Beck), and concepts and specification (Jackson). Several proposals work as capstones that draw on the whole book. Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A comparison and suggested pairing is at the end.*
 
 ---
 

@@ -356,9 +356,9 @@ Main points:
 
 ---
 
-## Postscript: a changed view
+## Postscript: updating on new facts
 
-A few months after the interview, Shriram asked to update his comments on LLMs: "programming changed in a fundamental way in November 2025 with Claude Code... this is one of the 5 most important programming technologies I've seen." Groce kept the original answer for "historical integrity." **Class discussion:** what does it mean that an expert's view changed so fast? Which of his earlier claims (means of verification, correlated failure) does the postscript leave intact?
+A few months after the interview, Shriram asked to update his comments on LLMs: "programming changed in a fundamental way in November 2025 with Claude Code... this is one of the 5 most important programming technologies I've seen." Groce kept the original answer for "historical integrity." The tools changed, not his reasoning: his earlier claims (production gets cheap, so verification must scale; correlated failure; pairs of artifacts) are untouched, and the postscript applies them, concluding that education has to change and that students must tell experts what they experience. **Class discussion:** how should an expert update when the facts change? What in the earlier interview anticipated this, and what didn't?
 
 ---
 

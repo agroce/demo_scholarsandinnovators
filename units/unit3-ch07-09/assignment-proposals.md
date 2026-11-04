@@ -1,6 +1,6 @@
 # Unit 3 Assignment Proposals (Chapters 7–9)
 
-*Draft proposals for Alex to judge. They are aimed at an upper-division undergraduate SE course. This unit moves from building software to running and defending it: observation in production (Yang), security practice and AI risks (Hoodlet), and the foundations of trustworthy systems (Schneider). Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A comparison and suggested pairing is at the end.*
+*Assignment designs for instructors to choose from. They are aimed at an upper-division undergraduate SE course. This unit moves from building software to running and defending it: observation in production (Yang), security practice and AI risks (Hoodlet), and the foundations of trustworthy systems (Schneider). Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A comparison and suggested pairing is at the end.*
 
 ---
 

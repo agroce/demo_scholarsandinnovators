@@ -170,7 +170,7 @@ module.exports = {
         "Borrow from design schools (crits); treat languages as social objects",
       ],
       quote: "Design is always multimodal, multi-representational, multi-step, but CS has gotten into this mindset of 'Let me write the code.'",
-      notes: "PL and SE as 'the material science of computer science.' Postscript: months later Shriram asked to add that programming 'changed in a fundamental way in November 2025 with Claude Code.' Discuss what an expert's quick change of view does and doesn't undermine.",
+      notes: "PL and SE as 'the material science of computer science.' Postscript: months later Shriram asked to add that programming 'changed in a fundamental way in November 2025 with Claude Code.' The tools changed, not his principles: discuss how an expert should update when the facts on the ground change, and note that his production-vs-verification framework predicts exactly where he lands (education and checking now matter more).",
       terms: [
         ["UML, OCL, sequence charts", "UML: standard diagram notations. OCL: textual invariants and pre/postconditions over models. Message sequence charts: messages between components over time.", "'The class diagram is just a simplification of the code... OCL is fundamentally different.'"],
         ["HtDP design recipe", "Data definition → signature and purpose statement → examples → template → body → tests. Each step produces a different artifact.", "Examples are 'specs from below'; types are 'specs from above.'"],

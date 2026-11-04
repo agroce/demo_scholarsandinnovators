@@ -163,7 +163,7 @@ module.exports = {
         "Students must learn to judge code; AI won't replace programmers",
       ],
       quote: "So until we understand how to incentivize having assurance about AI outputs, I think we're skating on thin ice.",
-      notes: "His analogy: online classes during COVID didn't replace in-person teaching. He cites Microsoft rewriting parts of Windows in Rust with AI agents; check the current status before presenting it as fact.",
+      notes: "His analogy: online classes during COVID didn't replace in-person teaching. He cites Microsoft using AI agents to move parts of Windows to Rust; how much of Windows that covers has been disputed, so present it as his view at the time.",
       terms: [
       ],
     },

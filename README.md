@@ -84,4 +84,4 @@ If this repository is public, students can read the quiz and test keys. Instruct
 
 ## License
 
-*(to be decided)*
+Course materials are licensed CC BY 4.0, and the code in `tools/` is MIT licensed. Quotations from the interviews remain under the book's copyright. See `LICENSE.md` for details.

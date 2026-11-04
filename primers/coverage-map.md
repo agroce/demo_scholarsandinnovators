@@ -53,4 +53,4 @@ Knowledge areas are loosely based on the IEEE *SWEBOK* (v4, 2024).
 
 - **Human–computer interaction and usability**: only Jackson's concept design and Norman's conceptual models (Ch. 12), plus Yang on design practice. A short UX supplement might be worth adding.
 - **Data-intensive and ML-enabled systems** (SE for ML, MLOps, evals): touched on in Ch. 7 (Yang on evals) only.
-- **Project management**: covered in Ch. 4's shorter topic. As you noted, almost no interviewee cares about it as a primary concern, which is itself worth telling students.
+- **Project management**: covered in Ch. 4's shorter topic. Almost no interviewee treats it as a primary concern, which is itself worth pointing out to students.

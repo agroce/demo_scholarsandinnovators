@@ -213,7 +213,7 @@ Beck describes a near-miss at San Francisco airport in which a plane came within
 
 At Facebook, which he dates to 2011–2017, Beck attended weekly incident reviews. The person responsible presented the timeline, what they noticed, short- and long-term fixes, and changes to tooling or design. "It didn't matter if you'd cost Facebook a billion dollars. You walk out of that meeting, and you have your job." But people who blamed others ("operations did it, it wasn't my fault") "were walked out of the building by security."
 
-*Instructor note:* Beck's SFO example appears to be Air Canada Flight 759 (July 2017), which lined up to land on a taxiway occupied by four airliners. Check details before presenting.
+*Instructor note:* Beck's SFO example is Air Canada Flight 759 (July 7, 2017), which lined up to land on a taxiway where four airliners were waiting and went around at the last moment.
 
 > [!NOTE]
 > **KEY TERM: Blameless postmortem**

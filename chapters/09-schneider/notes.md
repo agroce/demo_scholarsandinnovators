@@ -284,7 +284,7 @@ Second, **accountability**: "Who should be considered accountable for outputs pr
 
 On teaching: "students need to understand programming well enough to be able to look at some code and know whether it's going to work or not." On jobs: just as online classes during COVID didn't replace in-person teaching, AI will be "useful in certain aspects of software development, but it's not going to replace programmers. The risk of errors in AI generated objects and actions is too great."
 
-He mentions Microsoft recoding big parts of Windows into Rust with AI agents as a test case for "refactoring and translation." *(Instructor note: check the current status of this effort before presenting it as fact.)*
+He mentions Microsoft recoding big parts of Windows into Rust with AI agents as a test case for "refactoring and translation." *(Instructor note: Microsoft has said publicly that it is using AI-assisted translation to move C and C++ code to Rust, but how much of Windows that covers has been disputed. Present this as Schneider’s view at the time of the interview.)*
 
 > [!NOTE]
 > **KEY TERM: Accountability**

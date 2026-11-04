@@ -1,6 +1,6 @@
 # Unit 1 Assignment Proposals (Chapters 1–3)
 
-*Draft proposals for Alex to judge. They are aimed at an upper-division undergraduate SE course. Each is a 1–3 week team or individual project. They range from hands-on technical work to reflective and design-oriented work. Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A short comparison and suggested pairing is at the end.*
+*Assignment designs for instructors to choose from. They are aimed at an upper-division undergraduate SE course. Each is a 1–3 week team or individual project. They range from hands-on technical work to reflective and design-oriented work. Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A short comparison and suggested pairing is at the end.*
 
 ---
 

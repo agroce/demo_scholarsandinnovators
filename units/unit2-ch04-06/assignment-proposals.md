@@ -1,6 +1,6 @@
 # Unit 2 Assignment Proposals (Chapters 4–6)
 
-*Draft proposals for Alex to judge. They are aimed at an upper-division undergraduate SE course. This unit is the most hands-on so far: debugging (Zeller, Kernighan), unhappy paths and test design (Zeller, Kernighan, Holzmann), model checking and static analysis (Holzmann), and process measurement (Holzmann). Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A comparison and suggested pairing is at the end.*
+*Assignment designs for instructors to choose from. They are aimed at an upper-division undergraduate SE course. This unit is the most hands-on so far: debugging (Zeller, Kernighan), unhappy paths and test design (Zeller, Kernighan, Holzmann), model checking and static analysis (Holzmann), and process measurement (Holzmann). Each entry includes the idea, its tie to the interviews, deliverables, a grading sketch, and risks or variants. A comparison and suggested pairing is at the end.*
 
 ---
 
