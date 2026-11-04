@@ -76,7 +76,29 @@ async function applyTheme(deckPath, theme, outPath = deckPath) {
 		});
 		if (fixed !== xml) zip.file(name, fixed);
 	}
-	fs.writeFileSync(outPath, await zip.generateAsync({ type: "nodebuffer", compression: "DEFLATE" }));
+	// Package hygiene. pptxgenjs writes a [Content_Types].xml Override for a slide master per slide
+	// (only slideMaster1 exists), Defaults for media types it never uses (one of them the invalid
+	// "image/jpg"), and empty folder entries in the zip. PowerPoint tolerates some of this some of
+	// the time; drop all of it so the package declares exactly the parts it has.
+	const ctName = "[Content_Types].xml";
+	let ct = await zip.file(ctName).async("string");
+	const parts = new Set(Object.keys(zip.files).filter(n => !zip.files[n].dir));
+	const exts = new Set(["xml", "rels"]);
+	for (const n of parts) if (n.startsWith("ppt/media/")) exts.add(n.split(".").pop().toLowerCase());
+	ct = ct.replace(/<Override PartName="\/([^"]+)"[^>]*\/>/g, (m, p) => (parts.has(p) ? m : ""));
+	ct = ct.replace(/<Default Extension="([^"]+)"[^>]*\/>/g, (m, e) => (exts.has(e.toLowerCase()) ? m : ""));
+	zip.file(ctName, ct);
+	// Section ids are ST_Guid, which the schema spells in upper-case hex; and write apostrophes in
+	// section names literally, as PowerPoint itself does, rather than as &apos;.
+	const presName = "ppt/presentation.xml";
+	let pres = await zip.file(presName).async("string");
+	pres = pres.replace(/<p14:section name="([^"]*)" id="(\{[^"]+\})"/g,
+		(m, nm, id) => `<p14:section name="${nm.replace(/&apos;/g, "'")}" id="${id.toUpperCase()}"`);
+	zip.file(presName, pres);
+	// Copy into a fresh zip so no directory entries are written.
+	const out = new (loadJSZip())();
+	for (const n of [ctName, ...[...parts].filter(p => p !== ctName)]) out.file(n, await zip.file(n).async("uint8array"), { createFolders: false });
+	fs.writeFileSync(outPath, await out.generateAsync({ type: "nodebuffer", compression: "DEFLATE" }));
 }
 
 module.exports = { applyTheme };
