@@ -10,7 +10,7 @@
 
 **Shorter topic: is software engineering engineering?** The 1968 NATO provocation; Shaw's model of how engineering disciplines mature; licensing, codes, and liability; arguments on both sides.
 
-> **Why read this first.** Shaw, with David Garlan, created software architecture as a field, and her whole career aims at "the genuine engineering discipline for software." She talks about architectural styles, architecture description languages, frameworks that impose their architectures, and her model of engineering maturity as if you already know them. This primer covers those ideas so you can follow her, and so you can compare the many interviewees' answers to Shriram's design question with an architect's vocabulary.
+> **Why read this first.** Shaw, with David Garlan, created software architecture as a field, and her whole career aims at "the genuine engineering discipline for software." She talks about architectural styles, architecture description languages, frameworks that impose their architectures, and her model of engineering maturity as if you already know them. This primer covers those ideas so you can follow her, and so you can compare the many interviewees' answers to Krishnamurthi's design question with an architect's vocabulary.
 
 ---
 

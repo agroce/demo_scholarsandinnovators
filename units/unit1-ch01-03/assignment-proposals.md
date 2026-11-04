@@ -8,7 +8,7 @@
 
 **Chapters:** Krishnamurthi (correlated failure, means of verification), Ball (benchmark validity), Liskov (specifications).
 
-**The idea.** Shriram says using one LLM to write both code and tests is "dancing this close to the fire." This assignment has students *measure* it instead of taking it on authority.
+**The idea.** Krishnamurthi says using one LLM to write both code and tests is "dancing this close to the fire." This assignment has students *measure* it instead of taking it on authority.
 
 Each team gets a short English specification for a small, tricky library: an interval set, a date-range parser, a rate limiter, or a semantic-version comparator. The instructor also keeps a hidden, carefully tested reference implementation.
 
@@ -20,7 +20,7 @@ Each team gets a short English specification for a small, tricky library: an int
 3. Evaluate each suite by (a) **bugs found** in the LLM implementation, judged against the reference, and (b) **mutation score** against the reference implementation, using mutmut or universalmutator.
 4. Analyze which suites miss the same bugs the code has, and whether the misses look correlated.
 
-**Deliverables.** The code, the three suites, a results table, and a 4–6 page report that answers: *Did your data support Shriram's claim? What would make two artifacts "different enough"?*
+**Deliverables.** The code, the three suites, a results table, and a 4–6 page report that answers: *Did your data support Krishnamurthi's claim? What would make two artifacts "different enough"?*
 
 **Grading sketch.** Experimental design and fairness (25%), correctness of measurement (25%), quality of T3 (20%), analysis and honest discussion of threats to validity (30%).
 
@@ -41,7 +41,7 @@ Seed list (students must also find at least one case not on this list):
 - Unmodifiable collections that throw `UnsupportedOperationException`. This one is a debatable case: Java's `List` spec calls those operations "optional." Is that an LSP escape hatch or a weak specification?
 - Python: subclasses of `dict` that override `__getitem__` but not `get`, so the two disagree.
 
-**Deliverables.** For each case: (1) a written *specification* of the relevant supertype behavior, in pre/postcondition or OCL style; (2) a contract test that passes on a conforming implementation and fails on the violator; (3) a proposed redesign, such as composition instead of inheritance or splitting the interface; (4) one paragraph on *why* the library designers might have made the choice. That last part is Shriram's "kernel of truth": respect before critique.
+**Deliverables.** For each case: (1) a written *specification* of the relevant supertype behavior, in pre/postcondition or OCL style; (2) a contract test that passes on a conforming implementation and fails on the violator; (3) a proposed redesign, such as composition instead of inheritance or splitting the interface; (4) one paragraph on *why* the library designers might have made the choice. That last part is Krishnamurthi's "kernel of truth": respect before critique.
 
 **Grading sketch.** Specification precision (30%), test quality (30%), redesign (20%), historicist explanation (20%).
 
@@ -53,7 +53,7 @@ Seed list (students must also find at least one case not on this list):
 
 **Chapters:** Krishnamurthi (teaching methodology backwards, Kuhn), Ball ("I'm not a methodology guy but... people still matter"), Liskov (the software crisis).
 
-**The idea.** This scales up Shriram's in-class exercise. Each team gets an **era card** with real constraints and must *derive* a development process from first principles before reading anything about that era's actual methods:
+**The idea.** This scales up Krishnamurthi's in-class exercise. Each team gets an **era card** with real constraints and must *derive* a development process from first principles before reading anything about that era's actual methods:
 
 | Era card | Constraints (examples) |
 |---|---|
@@ -61,7 +61,7 @@ Seed list (students must also find at least one case not on this list):
 | 1975: Bank back office | COBOL, terminals, nightly batch runs, auditors, a system that must never lose money |
 | 1994: Shrink-wrap software | C++, release on CD, no patches after ship, a retail launch date fixed months ahead |
 | 2012: Web startup | Continuous deploy, A/B tests, 4 engineers, an 8-week runway |
-| 2026: Agentic team | Coding agents produce most code, humans review; Shriram's "means of verification" problem |
+| 2026: Agentic team | Coding agents produce most code, humans review; Krishnamurthi's "means of verification" problem |
 
 Teams present their derived process. *Then* they research what practitioners of that era actually did and present the gap. Was the real method better or worse adapted to the constraints than theirs, and why?
 
@@ -69,7 +69,7 @@ Teams present their derived process. *Then* they research what practitioners of 
 
 **Grading sketch.** Quality of reasoning from constraints (40%), research (25%), honest comparison (25%), crit participation (10%).
 
-**Why it's interesting.** The 2026 card has no textbook answer, so students produce genuine proposals. Comparing the 1958 and 2026 cards also shows that process follows the cost of change, which links to Shriram's "make it 10x cheaper."
+**Why it's interesting.** The 2026 card has no textbook answer, so students produce genuine proposals. Comparing the 1958 and 2026 cards also shows that process follows the cost of change, which links to Krishnamurthi's "make it 10x cheaper."
 
 ---
 
@@ -89,7 +89,7 @@ Teams present their derived process. *Then* they research what practitioners of 
 
 **Grading sketch.** Correct RI and AF (25%), stateful test design (30%), mutation analysis (25%), reflection (20%).
 
-**Why it's good.** It makes Liskov's abstract ideas concrete and executable, and shows students that the AF *is* Shriram's "second artifact." It's probably the strongest *technical* assignment for this unit.
+**Why it's good.** It makes Liskov's abstract ideas concrete and executable, and shows students that the AF *is* Krishnamurthi's "second artifact." It's probably the strongest *technical* assignment for this unit.
 
 ---
 
@@ -149,26 +149,26 @@ Then hold a structured **crit**. Another team presents first, while the reviewer
 
 **Grading sketch.** Graded on the *delta*: quality of v2 relative to v1 and how well crit feedback was used (40%). Also: coverage and consistency of representations (30%), quality of critique given to others (30%).
 
-**Why it's interesting.** It is the classroom version of Shriram's open question, "Could you imagine a PL class that did crits?", and it gives practice in the design review culture Groce saw at JPL.
+**Why it's interesting.** It is the classroom version of Krishnamurthi's open question, "Could you imagine a PL class that did crits?", and it gives practice in the design review culture Groce saw at JPL.
 
 ---
 
 ## A8. Test an Interviewee's Claim: A Mini Empirical Study
 
-**Chapters:** All three, plus Shriram's warning against hero worship and Liskov's "understand what you don't understand."
+**Chapters:** All three, plus Krishnamurthi's warning against hero worship and Liskov's "understand what you don't understand."
 
 **The idea.** Each student or pair picks one *checkable* claim from the interviews and designs a small empirical study to support or challenge it with real data. Candidate claims:
 
-- Shriram: "Every single language that started off as some sort of scripting language has gotten a gradual typing system." Survey the top 20 dynamic languages for gradual typing, its timeline, and adoption.
+- Krishnamurthi: "Every single language that started off as some sort of scripting language has gotten a gradual typing system." Survey the top 20 dynamic languages for gradual typing, its timeline, and adoption.
 - Liskov: Without compiler-enforced modularity, teams break encapsulation. Mine Python repositories for external access to `_private` members and compare with how often Java code uses reflection to bypass `private`.
 - Ball: Testing is decided by "gut feel" per layer. Mine 30 GitHub projects' CI configs and test directories. What fraction test the GUI automatically compared with the core logic?
-- Shriram: CI has made running "every damn thing... on every single commit" normal. Measure what actually runs per commit across a sample of projects, and estimate its compute cost.
+- Krishnamurthi: CI has made running "every damn thing... on every single commit" normal. Measure what actually runs per commit across a sample of projects, and estimate its compute cost.
 
 **Deliverables.** A preregistered one-page plan (hypothesis, data source, method) submitted *before* data collection, then a 5-page report with data, scripts, and threats to validity.
 
 **Grading sketch.** Preregistration quality (20%), method (30%), honesty of conclusions, including null results (30%), reproducibility (20%).
 
-**Why it's interesting.** It builds the habit of *critical distance* Shriram describes ("I think my job is to be critical"), and it introduces mining software repositories as a research method.
+**Why it's interesting.** It builds the habit of *critical distance* Krishnamurthi describes ("I think my job is to be critical"), and it introduces mining software repositories as a research method.
 
 ---
 

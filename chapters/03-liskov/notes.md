@@ -252,7 +252,7 @@ Her career also shows the role of luck and constraint. She took the MITRE job as
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** SLAM's API usage rules are specifications of how clients must use an interface, the same specification-centered view of modules Liskov championed. Ball and Liskov both predict that specifications matter *more* with AI-generated code.
-- **Chapter 2 (Krishnamurthi):** Shriram's "pair of artifacts" (code vs. independent specification) is exactly what Liskov's specification-first approach provides. Both praise teaching "from first principles." Shriram's critique of UML class diagrams as mere restatements of code echoes Liskov's complaint about implementation-oriented subclassing. Neither one tells you what the code is *supposed* to do.
+- **Chapter 2 (Krishnamurthi):** Krishnamurthi's "pair of artifacts" (code vs. independent specification) is exactly what Liskov's specification-first approach provides. Both praise teaching "from first principles." Krishnamurthi's critique of UML class diagrams as mere restatements of code echoes Liskov's complaint about implementation-oriented subclassing. Neither one tells you what the code is *supposed* to do.
 
 ## Discussion questions
 

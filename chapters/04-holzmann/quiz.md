@@ -67,4 +67,4 @@
 
 ## Part C — Short essay (1–2 paragraphs)
 
-**10.** Holzmann calls his approach "the waterfall... but in a scientific and project management context." Explain his defect-tracking method: what is measured, what "how far bugs travel" means, and how the data is used to improve the process. Then compare this to *one* other interviewee's view of the waterfall (Shriram, Zeller, or Kernighan). Are they talking about the same thing?
+**10.** Holzmann calls his approach "the waterfall... but in a scientific and project management context." Explain his defect-tracking method: what is measured, what "how far bugs travel" means, and how the data is used to improve the process. Then compare this to *one* other interviewee's view of the waterfall (Krishnamurthi, Zeller, or Kernighan). Are they talking about the same thing?

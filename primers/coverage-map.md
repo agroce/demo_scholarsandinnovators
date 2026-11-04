@@ -9,7 +9,7 @@ Knowledge areas are loosely based on the IEEE *SWEBOK* (v4, 2024).
 | Ch | Interviewee | Major topic (in depth) | Shorter topic / history | Why here |
 |---|---|---|---|---|
 | 1 | Ball | **Verification & validation landscape**: testing, static analysis, model checking, proof; soundness; the assurance spectrum | History of verification; famous failures (Therac-25, Ariane 5, Knight Capital, Heartbleed) | Ball moves among all four families; SLAM combined them |
-| 2 | Krishnamurthi | **Software process models**: SAGE, Royce (with the loops), V-model, spiral, iterative and incremental, Agile Manifesto, XP/Scrum/Kanban survey, DevOps, Boehm–Turner | **PL ↔ SE**: how SE problems became language features | Shriram re-derives the waterfall; PL as "material science" |
+| 2 | Krishnamurthi | **Software process models**: SAGE, Royce (with the loops), V-model, spiral, iterative and incremental, Agile Manifesto, XP/Scrum/Kanban survey, DevOps, Boehm–Turner | **PL ↔ SE**: how SE problems became language features | Krishnamurthi re-derives the waterfall; PL as "material science" |
 | 3 | Liskov | **Modularity & abstraction**: Parnas and KWIC, coupling and cohesion, specifications, encapsulation and leaks, inheritance vs. composition, SOLID | History of modularity; Conway's law | Data abstraction; "modularity is all there is" |
 | 4 | Holzmann | **Requirements & the economics of defects**: RE activities, functional vs. NFRs, good requirements (EARS), user stories, JPL failures, cost-to-fix curve and its critics, inspections, safety standards | **Project management & estimation** (Brooks's law, cone of uncertainty, COCOMO, story points, CHAOS critique); LTL refresher | Defect-phase metrics; "it's not just programming" |
 | 5 | Zeller | **Testing & debugging fundamentals**: levels, black/white-box design, coverage and MC/DC, mutation, oracles, test generation, flakiness, TRAFFIC, scientific debugging | **Version control** history, SCCS → Git | Delta debugging; unit tests and VCS as the biggest advances |
@@ -47,7 +47,7 @@ Knowledge areas are loosely based on the IEEE *SWEBOK* (v4, 2024).
 - **Process** is surveyed historically in Ch. 2, practiced in depth in Ch. 11 (XP/TDD), and operationalized in Ch. 7 (DevOps). Each primer points to the others.
 - **Security** goes from practice (Ch. 8, Hoodlet) to foundations (Ch. 9, Schneider). This follows the book's order and works well pedagogically: concrete before abstract.
 - **Design** appears three times at different scales: modules (Ch. 3), architecture (Ch. 10), and concepts and specification (Ch. 12). The last chapter becomes a capstone.
-- **Shriram's design question** was asked of almost every interviewee, so it threads through the whole book. The Ch. 10 and Ch. 12 primers give students the vocabulary to compare answers.
+- **Krishnamurthi's design question** was asked of almost every interviewee, so it threads through the whole book. The Ch. 10 and Ch. 12 primers give students the vocabulary to compare answers.
 
 ## Gaps and thin spots
 

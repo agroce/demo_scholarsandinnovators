@@ -41,7 +41,7 @@ Scoring: red teams earn points per distinct, reproducible finding, reduced with 
 
 ## B3. Model Check a Protocol with Spin
 
-**Chapters:** Holzmann (Spin, LTL, Büchi automata, "always my mistake"), Ball (Ch. 1: counterexamples), Shriram (Ch. 2: safety and liveness).
+**Chapters:** Holzmann (Spin, LTL, Büchi automata, "always my mistake"), Ball (Ch. 1: counterexamples), Krishnamurthi (Ch. 2: safety and liveness).
 
 **The idea.** Students model a small concurrent protocol in **Promela**, state its correctness properties in **LTL**, and use Spin to find and fix bugs from counterexamples. Candidate systems, from simplest to hardest:
 - Peterson's mutual exclusion, then a broken "simplified" variant
@@ -90,7 +90,7 @@ Two twists:
 - One rule must be a modernized version of a rule from *The Elements of Programming Style* or the Power of Ten. What changed and why?
 - One rule must target something an LLM coding assistant commonly gets wrong in that domain, documented with examples.
 
-**Deliverables.** The standard (rule, rationale, example violation, example fix), the checker rules, a triage report (true positives, false positives, "technically violating but fine"), and a one-page reflection on which rules were worth the friction (Shriram, Ch. 2).
+**Deliverables.** The standard (rule, rationale, example violation, example fix), the checker rules, a triage report (true positives, false positives, "technically violating but fine"), and a one-page reflection on which rules were worth the friction (Krishnamurthi, Ch. 2).
 
 **Grading sketch.** Rule quality and justification (35%); working checks (30%); honest triage, including false-positive rates (25%); reflection (10%).
 
@@ -98,7 +98,7 @@ Two twists:
 
 ## B6. Write the Manual First
 
-**Chapters:** Holzmann ("perhaps the most important part is writing the manual"), Kernighan (programs for other people; the feedback loop), Shriram (Ch. 2: multi-representational design).
+**Chapters:** Holzmann ("perhaps the most important part is writing the manual"), Kernighan (programs for other people; the feedback loop), Krishnamurthi (Ch. 2: multi-representational design).
 
 **The idea.** Students design a small command-line tool or library for a classmate's actual need, such as a grade-calculator CLI, a log summarizer, or a citation formatter. They write the complete **user manual first**: a man page or README with usage, every option, every error message, and worked examples. Then:
 1. A different team reads *only* the manual and tries to predict the output of ten example invocations. Every wrong prediction is a design or documentation defect.
@@ -132,7 +132,7 @@ Then the AI comparison: students give the same bugs to an LLM agent, once with c
 
 ## B8. Hype Cycle Case Study (Writing)
 
-**Chapters:** Kernighan (good idea → "structured lunch breaks" → absorbed), Zeller (TDD advocacy), Holzmann (a scientific waterfall), Shriram (Ch. 2: "kernel of truth").
+**Chapters:** Kernighan (good idea → "structured lunch breaks" → absorbed), Zeller (TDD advocacy), Holzmann (a scientific waterfall), Krishnamurthi (Ch. 2: "kernel of truth").
 
 **The idea.** A research essay of about 2,500 words. Choose a methodology or technology and trace it through Kernighan's cycle:
 1. The germ: the original problem and the original insight, from primary sources.

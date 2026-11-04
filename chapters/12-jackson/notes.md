@@ -295,7 +295,7 @@ The missed opportunity is **reuse** of designs. "Whenever you build a social med
 
 ## Theme 12: How we teach design
 
-Jackson agrees with Shriram that computer scientists avoid design. Two reasons. First, we teach programming as "the solving of well-specified, pre-digested problems," rather than teaching that "difficult work starts from actually having to formulate the problem for yourself." Second, CS hasn't absorbed design culture. Nigel Cross's *Designerly Ways of Knowing* contrasts engineering's stratified approach (formulate the problem, elaborate it, then solve) with designers' back-and-forth, in which "you construct an artifact, and you experiment with the artifact, and the artifact essentially teaches you about the structure and nature of your problem." Patterns and Christopher Alexander pushed software that way, but "we could still go a lot further," and must, "because LLMs are going to render a lot of the traditional challenges of programming no longer interesting." Not "the problem is to write a red and black tree."
+Jackson agrees with Krishnamurthi that computer scientists avoid design. Two reasons. First, we teach programming as "the solving of well-specified, pre-digested problems," rather than teaching that "difficult work starts from actually having to formulate the problem for yourself." Second, CS hasn't absorbed design culture. Nigel Cross's *Designerly Ways of Knowing* contrasts engineering's stratified approach (formulate the problem, elaborate it, then solve) with designers' back-and-forth, in which "you construct an artifact, and you experiment with the artifact, and the artifact essentially teaches you about the structure and nature of your problem." Patterns and Christopher Alexander pushed software that way, but "we could still go a lot further," and must, "because LLMs are going to render a lot of the traditional challenges of programming no longer interesting." Not "the problem is to write a red and black tree."
 
 > [!NOTE]
 > **KEY TERM: Designerly ways of knowing**
@@ -366,7 +366,7 @@ Concept design matters in all three, because "they all require a semantics." He 
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Static and dynamic analysis meet Alloy's bounded checking; both value tools that working engineers will actually use.
-- **Chapter 2 (Krishnamurthi):** Shriram's design question gets an answer from design culture (Cross, Schön, Alexander). Shriram's group at Brown built Forge, an Alloy-inspired tool for teaching formal methods.
+- **Chapter 2 (Krishnamurthi):** Krishnamurthi's design question gets an answer from design culture (Cross, Schön, Alexander). Krishnamurthi's group at Brown built Forge, an Alloy-inspired tool for teaching formal methods.
 - **Chapter 3 (Liskov):** Jackson's PhD supervisor Guttag and teacher Liskov; data abstraction "more successful than object-oriented programming."
 - **Chapter 6 (Kernighan):** Unix as infrastructure exemplar; *Recoding America*; Kernighan's struggle with Brooks's *Design of Design*.
 - **Chapter 9 (Schneider):** Conceptual integrity (Unix's "everything is a file") is concept design's goal; specifications as the key to assurance.

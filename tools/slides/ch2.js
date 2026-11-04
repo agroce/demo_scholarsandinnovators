@@ -32,7 +32,7 @@ module.exports = {
       notes: "He jokes about building exponential back-off into the IDE's Run button. Ask students: when has instant feedback made you sloppier? When has a slow build forced you to think?",
       terms: [
         ["Batch vs. interactive programming", "Batch: submit a job and wait hours, so each run is expensive. Interactive: feedback in seconds, which makes experiments cheap and may encourage trial-and-error over reasoning.", "Batch constraints taught 'thinking and planning and thinking ahead.'"],
-        ["Meta-circular interpreter", "An interpreter for a language written in that same language, reusing host features to implement them (the classic Lisp eval/apply).", "Shriram wrote one in BASIC as a teen without knowing the term."],
+        ["Meta-circular interpreter", "An interpreter for a language written in that same language, reusing host features to implement them (the classic Lisp eval/apply).", "Krishnamurthi wrote one in BASIC as a teen without knowing the term."],
         ["Friction", "Any cost (time, effort, attention) that makes an action less likely. Designers can remove it to encourage a behavior or add it to discourage one.", "'Every time you add friction you reduce the likelihood somebody will use it.'"],
       ],
     },
@@ -48,7 +48,7 @@ module.exports = {
       quote: "When the means of production becomes really easy or scalable... production is no longer the hard part. Verification becomes the hard part.",
       notes: "This is the most important idea in the chapter; spend time on it. It recurs at the end of the interview: 'if nobody else is doing the verification for you, and you didn't grow the thing yourself, are you gonna eat it?' Mistake vs. misconception: the HTML-regex example.",
       terms: [
-        ["Means of production vs. verification", "Shriram's thesis: when making an artifact gets cheap and scalable, the bottleneck becomes establishing trust in it. Verification must grow with production.", "'gen-AI means the emphasis is on verification.'"],
+        ["Means of production vs. verification", "Krishnamurthi's thesis: when making an artifact gets cheap and scalable, the bottleneck becomes establishing trust in it. Verification must grow with production.", "'gen-AI means the emphasis is on verification.'"],
         ["Software supply chain", "Every component, tool, and process that goes into software: libraries, build tools, registries, CI, AI generators. Supply-chain security aims to make each link trustworthy.", "The industry name for the food-chain analogy."],
         ["Mistake vs. misconception", "A mistake is a one-off slip. A misconception is a consistent wrong mental model producing predictable errors. Compare proximate vs. root cause.", "Parsing HTML with regexes: the fix is 'two levels of education deeper.'"],
       ],
@@ -64,11 +64,11 @@ module.exports = {
       ],
       quote: "There's literally no ifs in the program making conditional decisions! If you'd said that to me in 1993, when I started grad school, I'd have said 'What the f- are you talking about?'",
       quoteBy: "Shriram Krishnamurthi",
-      notes: "Contrast with Ball's 'details matter.' Shriram says CS has a 'fearlessness' and 'irreverence': we throw SAT solvers at undecidable problems. He frames CS's habit of flipping every assumption as 'diagonalization.'",
+      notes: "Contrast with Ball's 'details matter.' Krishnamurthi says CS has a 'fearlessness' and 'irreverence': we throw SAT solvers at undecidable problems. He frames CS's habit of flipping every assumption as 'diagonalization.'",
       terms: [
-        ["Data-driven (learned) software", "Software whose behavior comes mainly from data and learned parameters rather than hand-written logic.", "Shriram: curricula haven't adapted; data science is 'a stinging indictment.'"],
+        ["Data-driven (learned) software", "Software whose behavior comes mainly from data and learned parameters rather than hand-written logic.", "Krishnamurthi: curricula haven't adapted; data science is 'a stinging indictment.'"],
         ["Undecidability & approximation", "No algorithm answers an undecidable problem for all inputs (halting problem; Rice's theorem). Tools approximate: bounded search, 'unknown' results, false alarms.", "'undecidable, schmundecidable, whatever man.'"],
-        ["Diagonalization", "Cantor/Turing proof technique: build an object that differs from the i-th item in the i-th position, so it can't be on the list.", "Shriram's metaphor for CS flipping every assumption."],
+        ["Diagonalization", "Cantor/Turing proof technique: build an object that differs from the i-th item in the i-th position, so it can't be on the list.", "Krishnamurthi's metaphor for CS flipping every assumption."],
       ],
     },
     {
@@ -81,7 +81,7 @@ module.exports = {
         "Racket: make languages cheap to build, and let a thousand languages bloom",
       ],
       quote: "Anytime you make something 10x cheaper, it changes the way you use it.",
-      notes: "Shriram's creative outlet is language design, not graphics ('Why don't you go into graphics?' his dad asked). Racket as a 'workbench' for language experiments.",
+      notes: "Krishnamurthi's creative outlet is language design, not graphics ('Why don't you go into graphics?' his dad asked). Racket as a 'workbench' for language experiments.",
       terms: [
         ["Thread pool", "A fixed set of pre-created worker threads that take tasks from a queue. It amortizes creation cost and caps the thread count.", "A symptom of scarcity, managed like a 'secretarial pool.'"],
         ["Concurrency-oriented programming", "Armstrong's term for Erlang's style: huge numbers of cheap, isolated processes communicating by messages, with supervisors that restart failures.", "'Calling Erlang a functional language you're missing what's important.'"],
@@ -111,14 +111,14 @@ module.exports = {
       points: [
         "Safety: \"something bad never happens\"; violations show up in finite traces",
         "Liveness: \"something good eventually happens\"",
-        "Shriram's portfolio: a near-term \"safety\" project plus a speculative \"liveness\" one",
+        "Krishnamurthi's portfolio: a near-term \"safety\" project plus a speculative \"liveness\" one",
         "Safety work can have \"a short shelf-life\"; liveness work may never pay off",
       ],
       quote: "The safety part means that when the liveness thing is a slog, I still feel I'm still contributing something.",
-      notes: "Groce: NSF and DARPA have 'some element of smuggling liveness in under the guise of safety.' Also covers heroes vs. hero worship: Shriram refuses to name heroes in order to keep critical distance.",
+      notes: "Groce: NSF and DARPA have 'some element of smuggling liveness in under the guise of safety.' Also covers heroes vs. hero worship: Krishnamurthi refuses to name heroes in order to keep critical distance.",
       terms: [
-        ["Safety property", "A property stating that something bad never happens (e.g., mutual exclusion). Any violation is visible in a finite execution prefix.", "Shriram: short-term, high-certainty research."],
-        ["Liveness property", "A property stating that something good eventually happens (e.g., every request is answered). No finite trace can show a violation.", "Shriram: long-term, speculative research that makes 'a scientific dent.'"],
+        ["Safety property", "A property stating that something bad never happens (e.g., mutual exclusion). Any violation is visible in a finite execution prefix.", "Krishnamurthi: short-term, high-certainty research."],
+        ["Liveness property", "A property stating that something good eventually happens (e.g., every request is answered). No finite trace can show a violation.", "Krishnamurthi: long-term, speculative research that makes 'a scientific dent.'"],
       ],
     },
     {
@@ -170,18 +170,18 @@ module.exports = {
         "Borrow from design schools (crits); treat languages as social objects",
       ],
       quote: "Design is always multimodal, multi-representational, multi-step, but CS has gotten into this mindset of 'Let me write the code.'",
-      notes: "PL and SE as 'the material science of computer science.' Postscript: months later Shriram asked to add that programming 'changed in a fundamental way in November 2025 with Claude Code.' The tools changed, not his principles: discuss how an expert should update when the facts on the ground change, and note that his production-vs-verification framework predicts exactly where he lands (education and checking now matter more).",
+      notes: "PL and SE as 'the material science of computer science.' Postscript: months later Krishnamurthi asked to add that programming 'changed in a fundamental way in November 2025 with Claude Code.' The tools changed, not his principles: discuss how an expert should update when the facts on the ground change, and note that his production-vs-verification framework predicts exactly where he lands (education and checking now matter more).",
       terms: [
         ["UML, OCL, sequence charts", "UML: standard diagram notations. OCL: textual invariants and pre/postconditions over models. Message sequence charts: messages between components over time.", "'The class diagram is just a simplification of the code... OCL is fundamentally different.'"],
         ["HtDP design recipe", "Data definition → signature and purpose statement → examples → template → body → tests. Each step produces a different artifact.", "Examples are 'specs from below'; types are 'specs from above.'"],
-        ["Software product lines", "A family of related programs built from shared core assets plus variable features.", "Shriram's six overlapping PLAI interpreters: product lines 'in the small.'"],
+        ["Software product lines", "A family of related programs built from shared core assets plus variable features.", "Krishnamurthi's six overlapping PLAI interpreters: product lines 'in the small.'"],
         ["Design critique (crit)", "A structured peer review of work in progress, used in design and architecture education to build judgment, not to grade.", "'Could you imagine a PL class that did crits?'"],
       ],
     },
   ],
   connections: [
     ["Chapter 1 · Ball", [
-      "Shriram answers Ball's \"details matter\" with \"nothing\" is constant",
+      "Krishnamurthi answers Ball's \"details matter\" with \"nothing\" is constant",
       "Both see Lean and Rust as signs of rising expressiveness",
       "Ball's methodology suggestion produced the backwards-course story",
     ]],
@@ -196,6 +196,6 @@ module.exports = {
     "In what way are you a Blub programmer? Name a feature you dismissed, then came to value.",
     "Design an LLM-assisted workflow that keeps two genuinely independent artifacts.",
     "You're a 1955 developer building payroll on punch cards. Derive your process.",
-    "TDD: \"not a good idea\" (Shriram) or valuable artificial independence (Groce)?",
+    "TDD: \"not a good idea\" (Krishnamurthi) or valuable artificial independence (Groce)?",
   ],
 };

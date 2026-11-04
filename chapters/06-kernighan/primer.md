@@ -61,7 +61,7 @@ What does it actually achieve? Bacchelli and Bird's study at Microsoft (ICSE 201
 
 Good practice: small changes; clear descriptions; automated checks (CI, linters, static analysis) before human review; reviewers focus on design, correctness, and clarity, not formatting.
 
-> **Review and AI.** If LLMs write more code, review becomes a larger share of the human work, and Shriram's "means of verification" problem (Ch. 2) lands on the reviewer. Can a reviewer check code they didn't see being written as well as code they did?
+> **Review and AI.** If LLMs write more code, review becomes a larger share of the human work, and Krishnamurthi's "means of verification" problem (Ch. 2) lands on the reviewer. Can a reviewer check code they didn't see being written as well as code they did?
 
 ## Maintenance: most of a program's life
 
@@ -178,7 +178,7 @@ McIlroy, head of the Bell Labs department where Unix was born, had argued since 
 - **Composition beats features.** `grep | sort | uniq -c | sort -rn` answers questions no single tool was designed for. The same idea runs through Unix shells, functional pipelines, data-science notebooks, and microservices.
 - **Text as interface** makes tools universal and debuggable: you can always look at what flows between them. (JSON-over-HTTP APIs are its modern descendant.)
 - **Small, sharp tools** are easier to test, document, and keep correct (Holzmann's single-author tools, Ch. 4).
-- **Little languages**: AWK, sed, make, regular expressions, and eqn are domain-specific languages, an idea Shriram's Racket takes much further (Ch. 2).
+- **Little languages**: AWK, sed, make, regular expressions, and eqn are domain-specific languages, an idea Krishnamurthi's Racket takes much further (Ch. 2).
 - **Limits**: text loses structure; quoting and escaping bugs abound; "do one thing well" sometimes becomes "do one thing, poorly documented."
 
 > **Kernighan's hero.** "The obvious one is Ken Thompson... incredibly good insight, good taste." Multics was "over-engineered"; Unix was "only one idea, but do it really well."

@@ -18,7 +18,7 @@
 - **Validation**: are we building the _right_ product? Does the specification (and so the software) meet users' real needs?
 A **defect** (fault, bug) is a flaw in the code. When executed it may cause an **error** (a wrong internal state), which may cause a **failure** (visibly wrong behavior). Most V&V techniques are ways of finding defects before users see failures.
 
-Every technique checks the program against **something else**: expected outputs, a property, a model, a specification. Shriram (Chapter 2) calls this needing "a pair of artifacts to check against." If that something else is wrong, the check is too.
+Every technique checks the program against **something else**: expected outputs, a property, a model, a specification. Krishnamurthi (Chapter 2) calls this needing "a pair of artifacts to check against." If that something else is wrong, the check is too.
 
 > **Four families.** **Testing**: run the program on chosen inputs and check the results.
 
@@ -82,7 +82,7 @@ real bug             TRUE POSITIVE           FALSE NEGATIVE (missed)
 no bug               FALSE POSITIVE (alarm)  TRUE NEGATIVE
 ```
 
-No tool can be sound, complete, and fully automatic for all programs (see next slide). **Verifiers** usually choose soundness and accept false alarms. **Bug-finders** (most industrial static analyzers, fuzzers) choose few false alarms and accept missed bugs. Shriram (Ch. 2) describes "model checking" itself drifting from the first kind to the second.
+No tool can be sound, complete, and fully automatic for all programs (see next slide). **Verifiers** usually choose soundness and accept false alarms. **Bug-finders** (most industrial static analyzers, fuzzers) choose few false alarms and accept missed bugs. Krishnamurthi (Ch. 2) describes "model checking" itself drifting from the first kind to the second.
 
 ## Why everything is an approximation
 
@@ -93,7 +93,7 @@ So every automated tool gives something up:
 - **Over-approximate** (consider more behaviors than are possible): sound, but raises false alarms. Abstract interpretation, type systems, SLAM's predicate abstraction.
 - **Under-approximate** (consider fewer behaviors): no false alarms, but misses bugs. Testing, fuzzing, bounded model checking.
 - **Ask a human**: interactive proof assistants, annotations, loop invariants.
-Practical tools work anyway because real programs are not adversarial puzzles. Shriram (Ch. 2): "we throw SAT solvers at undecidable problems... undecidable, schmundecidable."
+Practical tools work anyway because real programs are not adversarial puzzles. Krishnamurthi (Ch. 2): "we throw SAT solvers at undecidable problems... undecidable, schmundecidable."
 
 > **In Chapter 1.** Ball on static vs. dynamic: "when you want to try to summarize infinite behavior concisely, maybe that's one way to say that's some sort of static analysis." Over-approximation summarizes; testing samples.
 

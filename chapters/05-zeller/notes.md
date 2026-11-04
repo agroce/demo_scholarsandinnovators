@@ -31,7 +31,7 @@ The chapter title comes from the end of the interview. Zeller urges researchers 
 
 ## Theme 1: Debugging is the constant — your model vs. reality
 
-Zeller started on a programmable calculator with 38 steps, then a 128-step model on which he wrote and sold a version of Monopoly. Like Ball (Chapter 1) and Shriram (Chapter 2), he contrasts scarcity, where you "really need to think hard about the algorithms," with today's ecosystems, where "if you don't find it in the standard library, then you ask ChatGPT to build it for you."
+Zeller started on a programmable calculator with 38 steps, then a 128-step model on which he wrote and sold a version of Monopoly. Like Ball (Chapter 1) and Krishnamurthi (Chapter 2), he contrasts scarcity, where you "really need to think hard about the algorithms," with today's ecosystems, where "if you don't find it in the standard library, then you ask ChatGPT to build it for you."
 
 What has stayed the same is the experience of debugging:
 
@@ -109,14 +109,14 @@ He adds that version control, reuse, and naturalness came from academia, "the un
 >
 > **Definition.** A library and conventions for writing small automated tests of individual units (functions, classes) with *assertions*, organized into test cases and suites with setup and teardown, and run by a test runner that reports pass or fail. Kent Beck's SUnit (Smalltalk) came first. Beck and Erich Gamma wrote **JUnit** for Java in 1997, famously while flying to the OOPSLA conference. Descendants include pytest, NUnit, and GoogleTest. Testing small units by hand is older. What the framework made cheap and routine was *automated, repeatable* unit testing.
 >
-> **In the interview.** "For me, this is one of the most important inventions of software engineering of all times." Compare Shriram's "anytime you make something 10x cheaper, it changes the way you use it" (Chapter 2).
+> **In the interview.** "For me, this is one of the most important inventions of software engineering of all times." Compare Krishnamurthi's "anytime you make something 10x cheaper, it changes the way you use it" (Chapter 2).
 
 > [!NOTE]
 > **KEY TERM: Software reuse and components**
 >
 > **Definition.** Building new systems from existing parts (libraries, frameworks, packages, services) instead of writing everything from scratch. Reuse depends on good *abstractions* (clear interfaces that hide implementation, per Parnas and Liskov) and on infrastructure for sharing: package managers, open-source licenses, repositories.
 >
-> **In the interview.** "All of the success of software engineering, as we have it today, is mostly in the super systematic reuse and abstraction of components." When he started, "everybody would reinvent the wheel at all times". This echoes Ball's and Shriram's scarcity-vs.-abundance contrast.
+> **In the interview.** "All of the success of software engineering, as we have it today, is mostly in the super systematic reuse and abstraction of components." When he started, "everybody would reinvent the wheel at all times". This echoes Ball's and Krishnamurthi's scarcity-vs.-abundance contrast.
 
 > [!NOTE]
 > **KEY TERM: Naturalness of software**
@@ -162,7 +162,7 @@ At the ACM's 50 Years of the Turing Award celebration, Zeller reflected that "no
 >
 > **Definition.** Named, reusable solutions to recurring design problems in object-oriented software, such as Observer, Strategy, Factory, Decorator, and Composite. Each pattern describes the problem, the structure of the solution, and the trade-offs. They were popularized by *Design Patterns: Elements of Reusable Object-Oriented Software* (Gamma, Helm, Johnson, and Vlissides, 1994), the "Gang of Four" book, which drew on Christopher Alexander's architectural patterns.
 >
-> **In the interview.** Zeller credits Gamma: "in terms of theory, the whole concept of design patterns... has been tremendously, tremendously influential." Compare Shriram's point (Chapter 2) that cheap object allocation is what *made* object-rich patterns practical.
+> **In the interview.** Zeller credits Gamma: "in terms of theory, the whole concept of design patterns... has been tremendously, tremendously influential." Compare Krishnamurthi's point (Chapter 2) that cheap object allocation is what *made* object-rich patterns practical.
 
 > [!NOTE]
 > **KEY TERM: Dynamic invariant detection (Daikon)**
@@ -209,7 +209,7 @@ He is pointed about calls to formally verify everything. He gives three objectio
 >
 > **Definition.** A proof shows that a program meets its specification, *not* that the specification captures what users actually need. A specification can be incomplete (silent about important behavior), wrong, or inconsistent. Validating the specification is a separate and often harder problem than verifying the code.
 >
-> **In the interview.** "What is the specification you verify it against? How do you know there are no holes in the specification?" Groce agrees: with LLM-generated proofs, "the spec may be wrong is always the problem." Compare Shriram's "pair of artifacts" (Chapter 2): the specification is only useful if it is genuinely independent and genuinely right.
+> **In the interview.** "What is the specification you verify it against? How do you know there are no holes in the specification?" Groce agrees: with LLM-generated proofs, "the spec may be wrong is always the problem." Compare Krishnamurthi's "pair of artifacts" (Chapter 2): the specification is only useful if it is genuinely independent and genuinely right.
 
 ---
 
@@ -273,13 +273,13 @@ He also explains why the problem persists: "They are not being paid for figuring
 
 ## Theme 8: Process — Agile yes, waterfall "never done," and TDD as favorite
 
-Zeller declines to judge requirements engineering. He notes that early-phase ideas are much harder to evaluate with numbers than a fuzzer is: "If I build a fuzzer... I press a button, boom, it works." He sees a clear trend toward agile development and prototypes. He claims the waterfall "as far as I know, has never ever been done by anyone really." (Compare Shriram's re-derivation of it, Kernighan's "adversarial relationships" account in Chapter 6, and Holzmann's defect-tracking version in Chapter 4.)
+Zeller declines to judge requirements engineering. He notes that early-phase ideas are much harder to evaluate with numbers than a fuzzer is: "If I build a fuzzer... I press a button, boom, it works." He sees a clear trend toward agile development and prototypes. He claims the waterfall "as far as I know, has never ever been done by anyone really." (Compare Krishnamurthi's re-derivation of it, Kernighan's "adversarial relationships" account in Chapter 6, and Holzmann's defect-tracking version in Chapter 4.)
 
 His favorite process is **test-driven development**:
 
 > "You start your day with, I don't know, 200, 500 tests, all failing... slowly but surely reducing the set of failing unit tests... always at the touch of a button, you know how close you are to success."
 
-Compare Shriram in Chapter 2: "I do happen to think TDD is not a good idea." Zeller also adds a caution: for safety-critical systems, "a bunch of tests would typically not be sufficient". You need systematically derived tests or test generation "including oracles, of course."
+Compare Krishnamurthi in Chapter 2: "I do happen to think TDD is not a good idea." Zeller also adds a caution: for safety-critical systems, "a bunch of tests would typically not be sufficient". You need systematically derived tests or test generation "including oracles, of course."
 
 > [!NOTE]
 > **KEY TERM: Test oracle**
@@ -293,7 +293,7 @@ Compare Shriram in Chapter 2: "I do happen to think TDD is not a good idea." Zel
 >
 > **Definition.** (See Chapter 2.) Write tests that state required behavior first, then implement until they pass, refactoring as you go.
 >
-> **In the interview.** Zeller's favorite process, and he says student teams "have been very successful with that." He describes a variant where *many* tests (including unhappy paths) are written first from requirements, which is closer to acceptance-test-driven development than to Beck's one-test-at-a-time loop. **Discussion:** is the difference between Zeller's and Shriram's views about TDD itself, or about *which* version of it?
+> **In the interview.** Zeller's favorite process, and he says student teams "have been very successful with that." He describes a variant where *many* tests (including unhappy paths) are written first from requirements, which is closer to acceptance-test-driven development than to Beck's one-test-at-a-time loop. **Discussion:** is the difference between Zeller's and Krishnamurthi's views about TDD itself, or about *which* version of it?
 
 > [!NOTE]
 > **KEY TERM: Refactoring**
@@ -314,14 +314,14 @@ Zeller makes the clearest *technical* argument in the book so far about LLMs' li
 4. **The fix is experimentation.** Future systems might learn by having them "run experiments again and again and again" on specific software, and software is where AI experimentation will advance first, "because you can run zillions of experiments in a sandbox."
 5. **Maintenance comes due.** "You cut down your workforce right now... and then you have all these vibe coders... Maintaining all this AI-written code, how are we going to do that? And then you're going to be very sorry you just laid off your best engineers."
 
-On verification he is more hopeful. He jokes about "vibe testing" and "vibe proofs." When Groce describes an LLM suggesting loop invariants for Dafny, Zeller notes the advantage: "once the prover says, okay, I can prove this property... then you're done." The prover is an independent check (compare Shriram's pair of artifacts).
+On verification he is more hopeful. He jokes about "vibe testing" and "vibe proofs." When Groce describes an LLM suggesting loop invariants for Dafny, Zeller notes the advantage: "once the prover says, okay, I can prove this property... then you're done." The prover is an independent check (compare Krishnamurthi's pair of artifacts).
 
 > [!NOTE]
 > **KEY TERM: Undecidability of program behavior (Rice's theorem) — applied**
 >
 > **Definition.** (See Chapter 2.) By Rice's theorem, no algorithm can decide any non-trivial property of what an arbitrary program does. Practical tools approximate, and approximate answers need *checking*, often by running the program.
 >
-> **In the interview.** Zeller's argument that LLMs can't simply "know" what code does: "you do not make an exponential problem solvable in constant time, simply because you attach another algorithm to it." His answer is experimentation. Compare Shriram's "undecidable, schmundecidable" (Chapter 2), which is the same theory seen from the tool builder's side.
+> **In the interview.** Zeller's argument that LLMs can't simply "know" what code does: "you do not make an exponential problem solvable in constant time, simply because you attach another algorithm to it." His answer is experimentation. Compare Krishnamurthi's "undecidable, schmundecidable" (Chapter 2), which is the same theory seen from the tool builder's side.
 
 > [!NOTE]
 > **KEY TERM: Loop invariant (in automated verification)**
@@ -361,7 +361,7 @@ He is candid about the cost. Novel work is harder to publish, because reviewers 
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Both admire Erich Gamma's VS Code. Both describe AI's need for more context and experimentation. Ball's "breadcrumbs" and Zeller's "training on experiments" are two views of the same gap. Daikon is another case of Ball's static/dynamic blur.
-- **Chapter 2 (Krishnamurthi):** Directly opposed on TDD. They agree that verification matters more as code gets cheaper. Zeller's prover-checked "vibe proofs" are Shriram's pair of artifacts. Groce asked Zeller Shriram's design question, and Zeller deferred to Shriram as "another one of my heroes."
+- **Chapter 2 (Krishnamurthi):** Directly opposed on TDD. They agree that verification matters more as code gets cheaper. Zeller's prover-checked "vibe proofs" are Krishnamurthi's pair of artifacts. Groce asked Zeller Krishnamurthi's design question, and Zeller deferred to Krishnamurthi as "another one of my heroes."
 - **Chapter 3 (Liskov):** Zeller credits Liskov's abstraction mechanisms for modern reuse. His Word save example shows Liskov's transactional all-or-nothing idea at the level of a single function.
 - **Chapters 4 and 6 (Holzmann, Kernighan):** All three describe testing as finding your own mistakes. Compare Kernighan's "most kids didn't have a clue about how to test" and Holzmann's "it is always my mistake."
 
@@ -369,8 +369,8 @@ He is candid about the cost. Novel work is harder to publish, because reviewers 
 
 1. Zeller says debugging is about adapting "your model to reality." Describe a recent bug where your mental model was wrong. What experiment would have exposed the mismatch fastest?
 2. List 12 unhappy-path inputs for a field that accepts a US phone number. Which would your favorite web framework's built-in validators catch?
-3. Zeller claims the waterfall "has never ever been done by anyone really." Shriram re-derived it; Kernighan (Ch. 6) says it suits "adversarial relationships." Who's right? Can all three be?
-4. Zeller and Shriram disagree about TDD. Design an experiment for a student project course that could provide evidence either way. What are the confounding variables?
+3. Zeller claims the waterfall "has never ever been done by anyone really." Krishnamurthi re-derived it; Kernighan (Ch. 6) says it suits "adversarial relationships." Who's right? Can all three be?
+4. Zeller and Krishnamurthi disagree about TDD. Design an experiment for a student project course that could provide evidence either way. What are the confounding variables?
 5. Is Zeller's "you do not make an exponential problem solvable in constant time" argument convincing? What would an AI need to do to get around it?
 6. Zeller urges researchers to "go into the darkness." What would that mean for choosing a senior capstone or a first job?
 

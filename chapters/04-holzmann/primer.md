@@ -129,7 +129,7 @@ The curve is in nearly every SE textbook, often with precise multipliers ("100×
 - Menzies, Nichols, Shull, and Layman (_Empirical Software Engineering_, 2017) analyzed 171 projects and found **no consistent "delayed issue effect"**: in that data, issues fixed later were not systematically more expensive.
 **A reasonable reading:** the effect is real for some kinds of defects and settings (requirements flaws in safety-critical, hardware-coupled systems like spacecraft), but neither universal nor precisely known. Modern practices (CI, automated tests, cheap deployment) also flatten the curve.
 
-> **Why include this?.** This is Zeller's point about empirical SE (Ch. 5): theories are "slow to evolve" and confounders are everywhere. It's also Shriram's (Ch. 2) about critical distance: famous claims deserve the same scrutiny as famous people.
+> **Why include this?.** This is Zeller's point about empirical SE (Ch. 5): theories are "slow to evolve" and confounders are everywhere. It's also Krishnamurthi's (Ch. 2) about critical distance: famous claims deserve the same scrutiny as famous people.
 
 ## Finding defects early: inspections and classification
 
@@ -219,7 +219,7 @@ Steve McConnell (_Software Estimation_, 2006), following Boehm (1981): at the in
 - **Velocity**: points completed per sprint, used to forecast.
 - The **#NoEstimates** movement argues for slicing work small and counting items instead.
 
-Shriram (Ch. 2) mentions COCOMO in his list of things software engineering courses traditionally cover before students have any experience to hang them on.
+Krishnamurthi (Ch. 2) mentions COCOMO in his list of things software engineering courses traditionally cover before students have any experience to hang them on.
 
 ## Do projects really fail that often?
 

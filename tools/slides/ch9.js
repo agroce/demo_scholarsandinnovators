@@ -29,7 +29,7 @@ module.exports = {
         "So you can't mentally simulate even if you want to",
       ],
       quote: "Software developers had an incentive not to be providing documentation.",
-      notes: "He still remembers OS/360's communications vector table at hex location 10. Compare Holzmann and Shriram (batch taught care) with Kernighan (interactive computing as liberation).",
+      notes: "He still remembers OS/360's communications vector table at hex location 10. Compare Holzmann and Krishnamurthi (batch taught care) with Kernighan (interactive computing as liberation).",
       terms: [
         ["Mental simulation", "Tracing execution by hand or in your head with specific values, before running. The basis of code review and invariant reasoning.", "\"You mentally simulated the program.\""],
         ["API documentation", "A description precise enough to use an interface correctly without reading its code, including how options interact.", "\"Try 10 different versions.\""],

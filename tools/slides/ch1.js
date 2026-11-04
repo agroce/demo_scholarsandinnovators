@@ -137,7 +137,7 @@ module.exports = {
         "Everyone needs basic computing literacy, as drivers need some physics",
       ],
       quote: "It seems a lot of people are just moving in the same direction, which is always a sign that it's maybe good to do something else!",
-      notes: "Ball's suggestion to ask about methodology changed later interviews. Shriram's backwards course story (Chapter 2) comes from this question.",
+      notes: "Ball's suggestion to ask about methodology changed later interviews. Krishnamurthi's backwards course story (Chapter 2) comes from this question.",
       terms: [
         ["Development methodology", "A structured way to organize software work: requirements, planning, coordination, release. Examples: waterfall, spiral, Scrum, Kanban.", "'I'm not a methodology guy but I do think people still matter a lot.'"],
         ["Distributed software development", "Teams spread across sites and time zones coordinating through tools (GitHub, chat, CI). It raises communication and coordination costs.", "Herbsleb's work at Bell Labs; remote work after COVID."],
@@ -146,9 +146,9 @@ module.exports = {
   ],
   connections: [
     ["Chapter 2 · Krishnamurthi", [
-      "Groce quotes Ball's \"details matter\"; Shriram counters that nothing has stayed constant except humans",
-      "Shriram's \"means of verification\" echoes Ball's worry about code that \"sort of works\"",
-      "Ball suggested the methodology question Groce asks Shriram",
+      "Groce quotes Ball's \"details matter\"; Krishnamurthi counters that nothing has stayed constant except humans",
+      "Krishnamurthi's \"means of verification\" echoes Ball's worry about code that \"sort of works\"",
+      "Ball suggested the methodology question Groce asks Krishnamurthi",
     ]],
     ["Chapter 3 · Liskov", [
       "SLAM's interface rules descend from Liskov's specification-centered view of modules",

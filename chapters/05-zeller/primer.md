@@ -134,19 +134,19 @@ Generating inputs is often easy. Knowing the correct output is often hard. Barr,
 - **Symbolic and concolic execution**: DART (2005), KLEE (2008). Solve path constraints to reach new code (Ball, Ch. 1).
 - **Search-based test generation**: EvoSuite (Fraser and Arcuri) evolves unit test suites for Java to maximize coverage.
 - **Feedback-directed random testing**: Randoop builds call sequences for object-oriented APIs.
-- **LLM-based generation**: fast and fluent, but beware Shriram's **correlated failure** when the same model writes code and tests (Ch. 2).
+- **LLM-based generation**: fast and fluent, but beware Krishnamurthi's **correlated failure** when the same model writes code and tests (Ch. 2).
 
 > **The reduction step.** Generated failing inputs are usually huge and unreadable. **Test-case reduction** (Zeller's delta debugging, Ch. 5) shrinks them to something a human can debug. Generation and reduction go together.
 
 ## Regression testing in practice
 
-- **Continuous integration** runs the regression suite on every change (Shriram, Ch. 2: "the commit becomes my way of saying, this is a transaction boundary").
+- **Continuous integration** runs the regression suite on every change (Krishnamurthi, Ch. 2: "the commit becomes my way of saying, this is a transaction boundary").
 - **Test selection and prioritization**: when the full suite is too slow, run tests affected by the change first (change impact analysis).
 - **Flaky tests** pass and fail on the same code: timing, concurrency, test-order dependence, network, randomness. They erode trust in the whole suite. Large companies report flakiness as one of their biggest testing costs (Luo et al., FSE 2014, is a good starting study).
 - **Test maintenance**: tests are code and need refactoring too. Ball (Ch. 1): "maintaining test infrastructure is a tax you pay."
 - **Smoke tests** and **staged rollouts** complement automated suites (Ball, Ch. 1).
 
-> **TDD in one line.** Write a failing test, make it pass, refactor (Kent Beck). Zeller (Ch. 5) calls TDD his favorite process. Shriram (Ch. 2) thinks it's "not a good idea." Read both before deciding.
+> **TDD in one line.** Write a failing test, make it pass, refactor (Kent Beck). Zeller (Ch. 5) calls TDD his favorite process. Krishnamurthi (Ch. 2) thinks it's "not a good idea." Read both before deciding.
 
 ## Debugging as a process: Zeller's TRAFFIC
 

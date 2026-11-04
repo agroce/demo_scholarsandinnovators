@@ -96,7 +96,7 @@ A friend, after each year-long consulting job, spent four weeks reimplementing e
 >
 > **Definition.** Practice designed to improve performance: focused on specific weaknesses, with immediate feedback, repeated, and at the edge of current ability (Ericsson et al., 1993). In programming it appears as **code katas** (Dave Thomas), coding dojos, and rewriting the same program in different ways. It differs from experience gained simply by doing the job.
 >
-> **In the interview.** "If you want to get good, you practice. It's like scales for a musician." Compare Shriram's "do it twice" assignments and Royce's "do it twice" (Ch. 2 primer).
+> **In the interview.** "If you want to get good, you practice. It's like scales for a musician." Compare Krishnamurthi's "do it twice" assignments and Royce's "do it twice" (Ch. 2 primer).
 
 ---
 
@@ -270,7 +270,7 @@ One compounding effect: formal proof. Beck was a TA for a program-correctness co
 >
 > **Definition.** Software for writing machine-checked mathematical proofs, including proofs that programs meet specifications. **Lean** (Leonardo de Moura, Microsoft Research, 2013; Lean 4, 2021) is both a programming language and a prover, and is widely used in mathematics. Others include Rocq (formerly Coq), Isabelle, and Dafny, a verification-aware language. LLMs increasingly help write proofs, because the checker rejects anything wrong.
 >
-> **In the interview.** "I've returned to formal proofs. In a way that I wasn't able to before." Compare Shriram's prediction that proof-based languages will feel normal (Ch. 2).
+> **In the interview.** "I've returned to formal proofs. In a way that I wasn't able to before." Compare Krishnamurthi's prediction that proof-based languages will feel normal (Ch. 2).
 
 > [!NOTE]
 > **KEY TERM: Proof maintenance (the problem of change)**
@@ -330,7 +330,7 @@ He remembers his first computer: "this cursor's just blinking, and I can go away
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Ball noticed the book had little about process and people; Beck is the answer. Both connect at Microsoft Research and industry-scale testing.
-- **Chapter 2 (Krishnamurthi):** The waterfall's "fallacy" vs. Shriram's respectful derivation. Shriram predicts proof languages will feel normal; Beck is now using Lean.
+- **Chapter 2 (Krishnamurthi):** The waterfall's "fallacy" vs. Krishnamurthi's respectful derivation. Krishnamurthi predicts proof languages will feel normal; Beck is now using Lean.
 - **Chapter 4 (Holzmann):** Holzmann's insistence that every bug gets a real post-mortem; Beck's blameless incident reviews at Facebook.
 - **Chapter 5 (Zeller):** Unit tests as one of the biggest advances; Beck created xUnit. Specifications as oracles.
 - **Chapter 6 (Kernighan):** Brooks's "plan to throw one away" vs. Beck's "nothing beats repetition"; Kernighan's cut-and-try vs. Beck's learning process.

@@ -133,10 +133,10 @@ module.exports = {
         "Critical systems need more: systematic test generation \"including oracles\"",
       ],
       quote: "Always at the touch of a button, you know how close you are to success.",
-      notes: "Direct contrast with Shriram (Chapter 2): 'I do happen to think TDD is not a good idea.' Zeller's version writes many tests from requirements up front, closer to acceptance-test-driven development. Discuss whether they disagree about the same thing.",
+      notes: "Direct contrast with Krishnamurthi (Chapter 2): 'I do happen to think TDD is not a good idea.' Zeller's version writes many tests from requirements up front, closer to acceptance-test-driven development. Discuss whether they disagree about the same thing.",
       terms: [
         ["Test oracle", "Whatever decides whether observed behavior is correct: expected values, assertions, properties, reference implementations. The oracle problem: often there's no cheap reliable one.", "Why fuzzers often settle for 'didn't crash.'"],
-        ["TDD: the case for", "Write tests stating required behavior first, then implement until they pass. Zeller's students 'have been very successful with that.'", "Contrast with Shriram's critique."],
+        ["TDD: the case for", "Write tests stating required behavior first, then implement until they pass. Zeller's students 'have been very successful with that.'", "Contrast with Krishnamurthi's critique."],
         ["Refactoring", "Restructuring code to improve its design without changing external behavior. Tests make it safe.", "Keeping prototypes' structure from going 'down the drain.'"],
       ],
     },
@@ -175,8 +175,8 @@ module.exports = {
   ],
   connections: [
     ["Chapters 1–3", [
-      "Opposed to Shriram on TDD; agrees verification matters more as code gets cheaper",
-      "Prover-checked \"vibe proofs\" are Shriram's pair of artifacts",
+      "Opposed to Krishnamurthi on TDD; agrees verification matters more as code gets cheaper",
+      "Prover-checked \"vibe proofs\" are Krishnamurthi's pair of artifacts",
       "Credits Liskov's abstractions for reuse; admires VS Code like Ball",
     ]],
     ["Chapters 4 & 6", [
@@ -188,7 +188,7 @@ module.exports = {
   discussion: [
     "Describe a recent bug where your mental model was wrong. Which experiment would have exposed it fastest?",
     "List 12 unhappy-path inputs for a US phone number field. Which would your framework catch?",
-    "Zeller vs. Shriram on TDD: design a course experiment that could settle it. What confounds it?",
+    "Zeller vs. Krishnamurthi on TDD: design a course experiment that could settle it. What confounds it?",
     "Is \"no exponential problem in constant time\" a convincing limit on AI? What would get around it?",
     "What would \"going into the dark\" mean for your capstone or first job?",
   ],

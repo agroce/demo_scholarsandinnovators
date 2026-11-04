@@ -63,6 +63,6 @@ Distractors: K, L.
 | Synthesis across chapters, not a list | 3 |
 | Writing quality | 1 |
 
-**E1 guidance.** A strong "compatible" answer notes they describe different *aspects*: history (Shriram), practice (Zeller: nobody runs a pure waterfall), contracting (Kernighan), and measurement (Holzmann). A strong "conflict" answer contrasts Zeller's "never done" with Holzmann's use of the phase structure at JPL.
+**E1 guidance.** A strong "compatible" answer notes they describe different *aspects*: history (Krishnamurthi), practice (Zeller: nobody runs a pure waterfall), contracting (Kernighan), and measurement (Holzmann). A strong "conflict" answer contrasts Zeller's "never done" with Holzmann's use of the phase structure at JPL.
 
-**E2 guidance.** Good answers place LLMs as hypothesis *generators* (suggesting causes, tests, invariants) paired with independent *checkers* (execution, provers, oracles). They address the oracle problem and latent defects, and may cite Shriram's correlated failure (Ch. 2).
+**E2 guidance.** Good answers place LLMs as hypothesis *generators* (suggesting causes, tests, invariants) paired with independent *checkers* (execution, provers, oracles). They address the oracle problem and latent defects, and may cite Krishnamurthi's correlated failure (Ch. 2).

@@ -380,7 +380,7 @@ On teaching itself: the SEI used to say "the most effective technology transitio
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Ball's tools and Shaw's architecture are both about "between the code and the running system"; staged rollout and CrowdStrike.
-- **Chapter 2 (Krishnamurthi):** Shriram's question about design gets its fullest answer here (Simon, Schön, Alexander, Brooks). Both put language evolution at the center of SE history.
+- **Chapter 2 (Krishnamurthi):** Krishnamurthi's question about design gets its fullest answer here (Simon, Schön, Alexander, Brooks). Both put language evolution at the center of SE history.
 - **Chapter 3 (Liskov):** Abstract data types from two of their inventors' circles (CLU and Alphard); Shaw asks what modules *don't* capture.
 - **Chapter 4 (Holzmann):** Toyota; JPL "in the upper right-hand corner"; Boehm's influential, imperfect graphs.
 - **Chapter 6 (Kernighan):** Unix as an exemplar; pipes and filters as an architectural style; Brooks's *Design of Design* (Shaw's favorite; Kernighan couldn't finish it).

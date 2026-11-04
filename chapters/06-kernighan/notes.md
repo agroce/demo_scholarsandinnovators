@@ -36,7 +36,7 @@ Kernighan didn't really get hooked until a summer job at MIT's **Project MAC** i
 
 Today's beginners never make the step from batch to interactive, because "everything is just sitting there, waiting for them." Many first meet programming "totally intermediated by the web," for example in **Colab**: "The concept of a file system is foreign to students today, if they're not computer scientists."
 
-Compare Shriram (Chapter 2), who argues batch constraints had hidden *benefits*, and Holzmann (Chapter 4), whose day-long punch-card turnaround "taught one to be really careful." For Kernighan, getting *away* from batch was "a giant step forward."
+Compare Krishnamurthi (Chapter 2), who argues batch constraints had hidden *benefits*, and Holzmann (Chapter 4), whose day-long punch-card turnaround "taught one to be really careful." For Kernighan, getting *away* from batch was "a giant step forward."
 
 > [!NOTE]
 > **KEY TERM: Time-sharing (interactive computing)**
@@ -107,7 +107,7 @@ On safety, Kernighan quotes Stroustrup's quip that C++ can "blow off your whole 
 >
 > **Definition.** In *static* typing (Java, Rust, Go, Haskell), type errors are found before the program runs. In *dynamic* typing (Python, JavaScript), types are checked during execution, so a type error appears only when that code path runs. *Strong* vs. *weak* is a separate, looser axis: how much the language allows values to be misused as other types, for example C's unchecked casts and pointer arithmetic.
 >
-> **In the interview.** Python's "different class of stupidities" come from type errors found late, "after you've sent it off to everybody." C offers no protection at all: "you can do as many stupid things as you want, you don't get any help whatsoever." Compare Shriram's account of gradual typing (Chapter 2).
+> **In the interview.** Python's "different class of stupidities" come from type errors found late, "after you've sent it off to everybody." C offers no protection at all: "you can do as many stupid things as you want, you don't get any help whatsoever." Compare Krishnamurthi's account of gradual typing (Chapter 2).
 
 **No silver bullet, again.** Kernighan: "none of these languages have been the silver bullet. Nothing has been the silver bullet." He notes Brooks reaffirmed this around 1995. (See Chapter 1. Brooks's "'No Silver Bullet' Refired" appeared in the 1995 anniversary edition of *The Mythical Man-Month*.)
 
@@ -204,7 +204,7 @@ When Kernighan tried ML, he couldn't write the simple *Software Tools* programs:
 >
 > **Definition.** Designing a new system or version so existing programs, data, tools, or users keep working with it. Compatibility makes adoption much easier, which is why C++ compiled C programs and TypeScript accepts JavaScript. It also locks in old design decisions.
 >
-> **In the interview.** C++'s compatibility with C and Unix "meant it was portable, it meant it fit in a local environment, it meant you could use existing libraries and tools" and "downstream, of course, caused any number of complaints." Compare Shriram's gradual typing (Chapter 2).
+> **In the interview.** C++'s compatibility with C and Unix "meant it was portable, it meant it fit in a local environment, it meant you could use existing libraries and tools" and "downstream, of course, caused any number of complaints." Compare Krishnamurthi's gradual typing (Chapter 2).
 
 > [!NOTE]
 > **KEY TERM: Unspecified and undefined behavior**
@@ -226,7 +226,7 @@ Admired systems: Unix itself, **vi** ("an amazing piece of work. Works everywher
 >
 > **Definition.** A *regular expression* describes a set of strings (a regular language) using concatenation, alternation (`|`), and repetition (`*`). Every regex can be converted to a **nondeterministic finite automaton (NFA)** (Thompson's construction, 1968), and every NFA to an equivalent **deterministic finite automaton (DFA)** (subset construction). The DFA matches in time linear in the input. Tools like egrep and AWK used this theory directly. Backtracking regex engines, by contrast, can take exponential time on some patterns.
 >
-> **In the interview.** Kernighan's example of a theory-to-practice hero: Aho "understood the theory... which then showed up in practical libraries... Awk and... egrep." Compare Shriram's HTML-and-regex misconception (Chapter 2) and Holzmann's automata-based Spin and Cobra (Chapter 4).
+> **In the interview.** Kernighan's example of a theory-to-practice hero: Aho "understood the theory... which then showed up in practical libraries... Awk and... egrep." Compare Krishnamurthi's HTML-and-regex misconception (Chapter 2) and Holzmann's automata-based Spin and Cobra (Chapter 4).
 
 > [!NOTE]
 > **KEY TERM: Over-engineering (and the Unix philosophy)**
@@ -254,14 +254,14 @@ He then complicates his own view with Jennifer Pahlka's *Recoding America*. Gove
 >
 > **Definition.** Kernighan's pattern (related to Gartner's "hype cycle"): a genuinely good idea is overextended by promoters into areas where it doesn't fit, then settles into standard practice with an understanding of when it applies. Recognizing the pattern helps engineers adopt the kernel and skip the hype.
 >
-> **In the interview.** Structured programming → "structured lunch breaks"; OOP → "object-oriented testing, object... et cetera." Compare Shriram (Chapter 2): "there's always some deep kernel of truth," and his advice to "extract the kernel of truth."
+> **In the interview.** Structured programming → "structured lunch breaks"; OOP → "object-oriented testing, object... et cetera." Compare Krishnamurthi (Chapter 2): "there's always some deep kernel of truth," and his advice to "extract the kernel of truth."
 
 > [!NOTE]
 > **KEY TERM: Waterfall as a contracting model**
 >
 > **Definition.** In government and large-enterprise procurement, waterfall is often less a technical method than a *contracting structure*. Fixed requirements are written up front, a contractor bids, and delivery is judged against the written specification. Changes require formal (and costly) amendments.
 >
-> **In the interview.** "The thing about the waterfall model is that it is intended for, in effect, adversarial relationships... I will spec out what I think I want... throw it over the fence to you. And your job is to... give me exactly what I wrote, even if it isn't even remotely what anybody needs." A third explanation of the waterfall, alongside Shriram's historicist derivation (Ch. 2) and Holzmann's defect-phase view (Ch. 4).
+> **In the interview.** "The thing about the waterfall model is that it is intended for, in effect, adversarial relationships... I will spec out what I think I want... throw it over the fence to you. And your job is to... give me exactly what I wrote, even if it isn't even remotely what anybody needs." A third explanation of the waterfall, alongside Krishnamurthi's historicist derivation (Ch. 2) and Holzmann's defect-phase view (Ch. 4).
 
 > [!NOTE]
 > **KEY TERM: Incremental delivery vs. all-at-once constraints (accessibility)**
@@ -274,7 +274,7 @@ He then complicates his own view with Jennifer Pahlka's *Recoding America*. Gove
 
 ## Theme 9: Design — "the antithesis of design"
 
-Asked Shriram's design question, Kernighan agrees that computer scientists don't think much about design, and includes himself:
+Asked Krishnamurthi's design question, Kernighan agrees that computer scientists don't think much about design, and includes himself:
 
 > "I suspect a lot of people in computing, certainly myself, like immediate gratification, so I'll put a few lines out there and see whether they do anything, and then I'll grow up from there, and this is, in a way, the antithesis of design."
 
@@ -320,7 +320,7 @@ Kernighan opens with two caveats: he is "not very much an expert," and Arthur C.
 >
 > **Definition.** From Thomas Kuhn's *The Structure of Scientific Revolutions* (1962): a fundamental change in a field's basic concepts, methods, and standards, as opposed to incremental "normal science." Kuhn argued that competing paradigms are hard to compare from inside, and that the outcome is hard to predict while a shift is under way.
 >
-> **In the interview.** Kernighan's current book is about paradigm shifts in computing: analog to digital, the stored-program computer, integrated circuits, high-level languages, computability and complexity, networking, public-key cryptography, and now LLMs. He finds Kuhn hard to apply to computing ("it just didn't seem to fit"). Shriram (Chapter 2), by contrast, found Kuhn's historicist approach directly useful for teaching.
+> **In the interview.** Kernighan's current book is about paradigm shifts in computing: analog to digital, the stored-program computer, integrated circuits, high-level languages, computability and complexity, networking, public-key cryptography, and now LLMs. He finds Kuhn hard to apply to computing ("it just didn't seem to fit"). Krishnamurthi (Chapter 2), by contrast, found Kuhn's historicist approach directly useful for teaching.
 
 > [!NOTE]
 > **KEY TERM: Stored-program computer (von Neumann architecture)**
@@ -349,7 +349,7 @@ Compare Zeller (Chapter 5, "go into the dark"), Holzmann (Chapter 4, explaining 
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Both name Bell Labs as formative, and both admire VS Code or vi as durable tools. Ball's "details matter" fits Kernighan's "it's hard to get the program to do what you want." Both invoke "no silver bullet."
-- **Chapter 2 (Krishnamurthi):** Shriram re-derived the waterfall with respect; Kernighan explains it as a contracting model for adversarial relationships. Both describe methodology hype and the "kernel of truth." They disagree on batch computing's benefits.
+- **Chapter 2 (Krishnamurthi):** Krishnamurthi re-derived the waterfall with respect; Kernighan explains it as a contracting model for adversarial relationships. Both describe methodology hype and the "kernel of truth." They disagree on batch computing's benefits.
 - **Chapter 3 (Liskov):** Both see OOP as a scaling mechanism. Kernighan's "write code that won't step on each other" is Liskov's modularity in practical form.
 - **Chapter 5 (Zeller):** Kernighan's testing advice (boundaries, narrowing down) is the manual form of what Zeller automates (unhappy paths, delta debugging). Both are skeptical of AGI claims.
 - **Chapter 4 (Holzmann):** Both came out of Bell Labs' Computing Science Research Center and both name **Ken Thompson** as a hero. Read their accounts of him side by side.
@@ -358,7 +358,7 @@ Compare Zeller (Chapter 5, "go into the dark"), Holzmann (Chapter 4, explaining 
 
 1. Pick three rules from *The Elements of Programming Style* or *The Practice of Programming*. Do they still apply to Python or Rust today? Rewrite one example in a modern language.
 2. Kernighan's students tested an add-up-numbers program with 100 numbers. Write the five tests you would write first, and explain each.
-3. Kernighan says the waterfall suits adversarial relationships. Shriram says it was reasonable in 1955. Holzmann (Ch. 4) treats it as a scientific defect-tracking framework. Which explanation best fits a project you know?
+3. Kernighan says the waterfall suits adversarial relationships. Krishnamurthi says it was reasonable in 1955. Holzmann (Ch. 4) treats it as a scientific defect-tracking framework. Which explanation best fits a project you know?
 4. Apply Kernighan's hype cycle to a current methodology or technology (microservices, DevOps, "vibe coding"). Where on the cycle is it, and what is its kernel?
 5. Kernighan prefers "cut and try" for programs but top-down design for books. Why might the two differ? Should they?
 6. Kernighan lets students use LLMs for data analysis but not to write reports. Propose and defend a policy for this course.

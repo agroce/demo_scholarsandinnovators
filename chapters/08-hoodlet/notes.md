@@ -305,7 +305,7 @@ For a device patched once a year in an air-gapped environment, "sure, waterfall 
 
 ## Theme 12: Designing for security
 
-Responding to Shriram's design question, Hoodlet calls design for security "incredibly important." He mentions CISA's 2024 **Secure by Design pledge**, with an ironic note that one signatory continued to ship "really bad, easily exploitable remote vulnerabilities."
+Responding to Krishnamurthi's design question, Hoodlet calls design for security "incredibly important." He mentions CISA's 2024 **Secure by Design pledge**, with an ironic note that one signatory continued to ship "really bad, easily exploitable remote vulnerabilities."
 
 Civil engineering students see the **Tacoma Narrows Bridge** collapse in their first class. Software students rarely see the equivalent: "here is a server-side request forgery, or here is a remote code execution... You just never learn it." (Groce's father, a high school drafting teacher, showed the Tacoma Narrows film to every class.)
 

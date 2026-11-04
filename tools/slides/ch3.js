@@ -136,7 +136,7 @@ module.exports = {
       "Both predict specifications matter more with AI",
     ]],
     ["Chapter 2 · Krishnamurthi", [
-      "A specification is the independent second artifact Shriram's \"pair of artifacts\" calls for",
+      "A specification is the independent second artifact Krishnamurthi's \"pair of artifacts\" calls for",
       "Both teach \"from first principles\"",
       "Implementation-oriented views (subclassing, class diagrams) say nothing about intent",
     ]],

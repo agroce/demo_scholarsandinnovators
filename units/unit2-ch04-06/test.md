@@ -143,7 +143,7 @@ def test_create_user():
 
 ## Part E — Synthesis essay (15 points; choose ONE; ~1 page)
 
-**E1.** Across Chapters 2, 4, 5, and 6, four interviewees describe the waterfall model in four different ways (Shriram: derived from 1955 constraints; Zeller: never really done; Kernighan: a contract for adversarial relationships; Holzmann: a scientific framework for tracking defects). Write an essay arguing that these views are *compatible*, or that at least two are fundamentally *in conflict*. Use specific claims from the interviews.
+**E1.** Across Chapters 2, 4, 5, and 6, four interviewees describe the waterfall model in four different ways (Krishnamurthi: derived from 1955 constraints; Zeller: never really done; Kernighan: a contract for adversarial relationships; Holzmann: a scientific framework for tracking defects). Write an essay arguing that these views are *compatible*, or that at least two are fundamentally *in conflict*. Use specific claims from the interviews.
 
 **E2.** Zeller calls LLMs "glorified search and remix machines" that can't experiment, Kernighan calls them a real paradigm shift but "ordinary technology," and Holzmann says they "take your breath away" but must be tested "as you would a human being." Using ideas from this unit (debugging as experiment, verification vs. validation, latent defects, test oracles), argue what role LLMs should play in *testing and debugging* specifically.
 

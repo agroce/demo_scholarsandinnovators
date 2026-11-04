@@ -143,7 +143,7 @@ module.exports = {
       ],
       quote: "There is the waterfall in there, but in a scientific and project management context.",
       quoteBy: "Gerard Holzmann",
-      notes: "The most quantitative methodology answer in the book. Compare with Shriram (derived waterfall), Zeller ('never done'), and Kernighan (adversarial contract). Holzmann accepts iteration: 'You will have to go back.'",
+      notes: "The most quantitative methodology answer in the book. Compare with Krishnamurthi (derived waterfall), Zeller ('never done'), and Kernighan (adversarial contract). Holzmann accepts iteration: 'You will have to go back.'",
       terms: [
         ["Defect injection & detection", "Record each defect's phase introduced and phase detected. A defect caught where it was introduced is contained; the gap is how far it travels.", "'Make sure that the distance bugs travel gets shorter.'"],
         ["Root cause analysis of escapes", "Investigate why a defect occurred and why it escaped earlier checks, then fix the process, not only the bug.", "'Find out why that defect wasn't found in an earlier step.'"],
@@ -173,7 +173,7 @@ module.exports = {
   connections: [
     ["Chapters 1–3", [
       "Ball learned model checking from Spin at Bell Labs",
-      "LTL formalizes Shriram's safety and liveness",
+      "LTL formalizes Krishnamurthi's safety and liveness",
       "Writing the manual and teaching from first principles: Holzmann and Liskov",
     ]],
     ["Chapters 5–6", [

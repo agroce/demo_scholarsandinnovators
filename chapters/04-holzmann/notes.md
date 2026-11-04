@@ -66,7 +66,7 @@ Asked what working programmers most need, Holzmann goes to foundations, not tool
 2. **Automata theory**, "because that teaches you something about how computers work at an abstract level."
 3. **Philosophy and the history of thought.** "For an educated person, that is essential knowledge."
 
-He repeats this at the end of the interview and adds literature ("Don't just read trash, read the big authors"). Compare Butler Lampson's advice to study the humanities, which Shriram quotes in Chapter 2, and Harry Lewis's anthology of classic CS papers that begins with Aristotle and Leibniz.
+He repeats this at the end of the interview and adds literature ("Don't just read trash, read the big authors"). Compare Butler Lampson's advice to study the humanities, which Krishnamurthi quotes in Chapter 2, and Harry Lewis's anthology of classic CS papers that begins with Aristotle and Leibniz.
 
 > [!NOTE]
 > **KEY TERM: Formal logic (propositional and predicate)**
@@ -132,7 +132,7 @@ But he insists on **explaining**:
 >
 > **Definition.** A logic for stating properties of *infinite* execution sequences, introduced to computer science by Amir Pnueli ("The Temporal Logic of Programs," 1977; Turing Award 1996). Its operators include **G** (*globally*: always), **F** (*finally*: eventually), **X** (next), and **U** (until). Examples: `G ¬(crit1 ∧ crit2)` (mutual exclusion, a *safety* property); `G (request → F grant)` (every request is eventually granted, a *liveness* property). LTL formulas can be translated into Büchi automata, which is how Spin checks them.
 >
-> **In the interview.** The application that made omega automata matter. Holzmann credits Pnueli with describing model checking, while noting "He never claimed credit." See Shriram's safety and liveness (Chapter 2).
+> **In the interview.** The application that made omega automata matter. Holzmann credits Pnueli with describing model checking, while noting "He never claimed credit." See Krishnamurthi's safety and liveness (Chapter 2).
 
 > [!NOTE]
 > **KEY TERM: Büchi (omega) automata**
@@ -253,7 +253,7 @@ His summary: "There is the waterfall in there, but in a scientific and project m
 
 ## Theme 10: Design and ownership — incubation, the "Ken Thompson moment," and every line
 
-Asked Shriram's design question, Holzmann describes his own single-author process (Spin was designed by him alone) and is careful not to generalize:
+Asked Krishnamurthi's design question, Holzmann describes his own single-author process (Spin was designed by him alone) and is careful not to generalize:
 
 1. **Incubation.** "For a long time I don't know what to do with it, but it sits there. Then, maybe a few weeks later, as I'm falling asleep, or as I'm waking up, suddenly, I think, 'I know how to solve it.'"
 2. **Build to a testable state**, using a "quick hack" for side issues.
@@ -307,7 +307,7 @@ He ends with his own path. He wanted to be a portrait and news photographer, dev
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Ball learned model checking from Holzmann's Spin at Bell Labs and built on it in SLAM. Both stress counterexamples. Holzmann's process answer is a direct response to the methodology question Ball suggested.
-- **Chapter 2 (Krishnamurthi):** Shriram cites Holzmann's fondness for message sequence charts ("when somebody like Holzmann likes something, you should just shut up and listen"). LTL makes Shriram's safety and liveness formal. Holzmann's defect-phase account is a fourth view of the waterfall.
+- **Chapter 2 (Krishnamurthi):** Krishnamurthi cites Holzmann's fondness for message sequence charts ("when somebody like Holzmann likes something, you should just shut up and listen"). LTL makes Krishnamurthi's safety and liveness formal. Holzmann's defect-phase account is a fourth view of the waterfall.
 - **Chapter 3 (Liskov):** Both advise understanding what you don't understand. Holzmann does it by writing the manual, Liskov by teaching from first principles.
 - **Chapter 5 (Zeller):** Opposite emphases on rigor: Zeller warns that verifying everything breaks the economics; Holzmann shows where it pays (JPL). Both describe a cost-of-failure "divide."
 - **Chapter 6 (Kernighan):** Bell Labs colleagues who both put Ken Thompson first. Kernighan's "cut and try" design and Holzmann's subconscious incubation are two honest descriptions of how individual design happens.

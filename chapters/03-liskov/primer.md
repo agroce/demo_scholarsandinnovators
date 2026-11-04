@@ -143,7 +143,7 @@ Inside the module, a **representation invariant** and an **abstraction function*
 
 > **Why specs, not just types.** A type signature says `choose(): int`. Only the specification says it may return _any_ element, and that calling it on an empty set is the caller's fault. Signatures that match while behavior differs is exactly the stack-vs-queue problem Liskov describes.
 
-The same idea appears as Hoare-style pre/postconditions (Ball, Chapter 1), Meyer's design by contract, and OCL constraints (Shriram, Chapter 2). The point of all of them is that the interface carries behavioral promises, so clients and implementers can work independently.
+The same idea appears as Hoare-style pre/postconditions (Ball, Chapter 1), Meyer's design by contract, and OCL constraints (Krishnamurthi, Chapter 2). The point of all of them is that the interface carries behavioral promises, so clients and implementers can work independently.
 
 ## Encapsulation, and how abstractions leak
 
@@ -213,7 +213,7 @@ SOLID is a mnemonic, not a theory; treat it with Kernighan's hype-cycle skeptici
 - **1968**: at the NATO conference, Doug McIlroy proposed "Mass Produced Software Components," catalogs of reusable routines like hardware parts. It took decades and the Internet to arrive.
 - **Unix (1970s)**: small programs composed with **pipes**. Text streams are the universal interface (see the Chapter 6 primer).
 - **Package ecosystems**: CPAN (1995), Maven, npm, PyPI, crates.io. Reuse at enormous scale, with **semantic versioning** to signal interface changes.
-- **Dependency risk**: the 2016 npm `left-pad` incident (an 11-line package unpublished, breaking thousands of builds) and supply-chain attacks such as the 2024 xz backdoor. Every module you use is code you trust (Shriram's "means of verification," Chapter 2).
+- **Dependency risk**: the 2016 npm `left-pad` incident (an 11-line package unpublished, breaking thousands of builds) and supply-chain attacks such as the 2024 xz backdoor. Every module you use is code you trust (Krishnamurthi's "means of verification," Chapter 2).
 - **Services and microservices** (around 2014): modules become separately deployed processes communicating over a network. Strong encapsulation, but distributed-systems failure modes (Liskov's other career).
 
 > **Modularity as economics.** Baldwin and Clark (_Design Rules_, 2000) argue that modular designs create **option value**: each module can be improved or replaced independently. That's why modular industries (PCs, software packages) evolve so fast.
@@ -224,7 +224,7 @@ SOLID is a mnemonic, not a theory; treat it with Kernighan's hype-cycle skeptici
 >
 > — Melvin E. Conway, "How Do Committees Invent?", Datamation, 1968
 
-Module boundaries tend to mirror **team** boundaries. Three teams building a compiler will produce a three-pass compiler. The "inverse Conway maneuver" deliberately organizes teams around the architecture you want. Compare Ball (Ch. 1) on distributed development and Shriram (Ch. 2) on programming languages as social objects.
+Module boundaries tend to mirror **team** boundaries. Three teams building a compiler will produce a three-pass compiler. The "inverse Conway maneuver" deliberately organizes teams around the architecture you want. Compare Ball (Ch. 1) on distributed development and Krishnamurthi (Ch. 2) on programming languages as social objects.
 
 ## A short history of modularity, part 1
 

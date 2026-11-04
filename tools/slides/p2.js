@@ -43,7 +43,7 @@ module.exports = {
     "**Part 1: Process models.** What a process model is; the 1950s SAGE project; what Royce's 1970 paper actually said (it was _not_ a recommendation of the pure waterfall); how \"waterfall\" became doctrine; the V-model and the spiral; iterative and incremental development; the Agile Manifesto; XP, Scrum, Kanban; DevOps and continuous delivery; choosing between plan-driven and agile.",
     "**Part 2: Programming languages and SE.** How recurring software engineering problems (control flow, modularity, data hiding, memory errors, concurrency, scale) were repeatedly \"solved\" by moving them into language design.",
   ],
-  why: "Shriram describes teaching the waterfall model _backwards_: students derive it from 1955 constraints and come to respect it. To appreciate that move, and to judge the very different accounts of the waterfall from Zeller, Kernighan, and Holzmann later in the book, you need the real history. Shriram is also a programming-languages researcher. His claims that \"your favorite language is just the 17th one\" and that PL is \"the material science of computer science\" make most sense if you know how SE and PL ideas have traded places.",
+  why: "Krishnamurthi describes teaching the waterfall model _backwards_: students derive it from 1955 constraints and come to respect it. To appreciate that move, and to judge the very different accounts of the waterfall from Zeller, Kernighan, and Holzmann later in the book, you need the real history. Krishnamurthi is also a programming-languages researcher. His claims that \"your favorite language is just the 17th one\" and that PL is \"the material science of computer science\" make most sense if you know how SE and PL ideas have traded places.",
   slides: [
     { type: "section", kicker: "PART 1", title: "Software process models", subtitle: "Who decides what to build, in what order, and when to find out you were wrong?" },
     {
@@ -56,7 +56,7 @@ module.exports = {
         "The central variable is the **cost of change**. If changing a decision late is very expensive (punched cards, hardware, fixed-price contracts, spacecraft), you plan ahead. If change is cheap (interactive tools, automated tests, continuous deployment), you iterate.",
       ],
       callout: { label: "Three questions to ask of any process", text: "**1.** When are requirements considered fixed?\n**2.** How often does working software reach a real user?\n**3.** Where in the process is risk identified, and who pays when it's found late?" },
-      notes: "Process models are descriptions, and often idealizations, of how work is organized. Real projects mix models. A useful way to compare them is to ask what each assumes about the cost of change and the stability of requirements. Shriram's 1955 exercise works because it fixes those assumptions: punched cards, assembly language, and a customer (the military) who wants a system defined up front.",
+      notes: "Process models are descriptions, and often idealizations, of how work is organized. Real projects mix models. A useful way to compare them is to ask what each assumes about the cost of change and the stability of requirements. Krishnamurthi's 1955 exercise works because it fixes those assumptions: punched cards, assembly language, and a customer (the military) who wants a system defined up front.",
     },
     {
       type: "text", title: "The 1950s: SAGE and the first \"lifecycle\"",
@@ -65,7 +65,7 @@ module.exports = {
         "In 1956 **Herbert Benington** described how SAGE software was produced as a sequence of phases: operational plan, specifications, coding, parameter testing, assembly testing, shakedown, and system evaluation. It is essentially a waterfall, 14 years before Royce.",
         "When the paper was republished in 1983, Benington added a foreword saying the description was misleading. SAGE had in fact started by building an **experimental prototype**, and he would not recommend a strictly top-down sequential process.",
       ],
-      callout: { label: "Connection to Chapter 2", text: "Shriram asks students to imagine being \"a 1955 software developer\" building \"a defense system.\" That is almost exactly SAGE. The real SAGE developers already knew they needed a prototype." },
+      callout: { label: "Connection to Chapter 2", text: "Krishnamurthi asks students to imagine being \"a 1955 software developer\" building \"a defense system.\" That is almost exactly SAGE. The real SAGE developers already knew they needed a prototype." },
       notes: "Source: H. D. Benington, \"Production of Large Computer Programs,\" 1956 symposium; reprinted in IEEE Annals of the History of Computing, 1983, with a new foreword. Larman and Basili's 2003 history of iterative development discusses the foreword.",
     },
     { type: "diagram", title: "The diagram everyone remembers", ...fig2, caption: "This is (roughly) Figure 2 of Winston Royce's 1970 paper \"Managing the Development of Large Software Systems.\" It is the image reproduced in countless textbooks as \"the waterfall model.\" Royce did not use the word \"waterfall,\" and he did not recommend this picture.", mdDiagram: "System requirements → Software requirements → Analysis → Program design → Coding → Testing → Operations", notes: "Royce worked on spacecraft mission software at TRW. The paper presents this sequential figure only to criticize it on the next page." },
@@ -80,7 +80,7 @@ module.exports = {
         "- **Hardware coupling.** When software ships with hardware (spacecraft, telephone switches), parts of the schedule really are sequential.",
         "Many organizations that were 'doing waterfall' in fact iterated informally, while documenting a waterfall. That is one reason Zeller (Chapter 5) can say the pure waterfall \"has never ever been done by anyone really.\"",
       ],
-      callout: { label: "Four accounts in this book", text: "**Shriram** (Ch. 2): derive it from 1955 constraints and respect it.\n**Zeller** (Ch. 5): the pure form was never really practiced.\n**Kernighan** (Ch. 6): a contracting model for adversaries.\n**Holzmann** (Ch. 4): the phases are a frame for measuring defects scientifically." },
+      callout: { label: "Four accounts in this book", text: "**Krishnamurthi** (Ch. 2): derive it from 1955 constraints and respect it.\n**Zeller** (Ch. 5): the pure form was never really practiced.\n**Kernighan** (Ch. 6): a contracting model for adversaries.\n**Holzmann** (Ch. 4): the phases are a frame for measuring defects scientifically." },
       notes: "DOD-STD-2167A (1988) softened some requirements, and MIL-STD-498 (1994) explicitly allowed incremental and evolutionary development. The waterfall persisted in procurement long after its technical critics had moved on.",
     },
     { type: "diagram", title: "The V-model: every design level gets a test level", ...V, caption: "The **V-model** (developed in German government and in U.S. systems engineering in the 1980s–90s) is a waterfall bent in half: each specification level on the left is verified by a test level on the right, and test cases are **planned when the specification is written**. It remains widely used in safety-critical domains: the automotive standard ISO 26262 is organized around it, and avionics practice under DO-178C follows a similar structure.", mdDiagram: "Requirements ............................ Acceptance testing\n   System design ...................... System testing\n      Architecture design ........... Integration testing\n         Module design ............ Unit testing\n                       Coding", notes: "The V-model's lasting contribution is the pairing of specification and test levels, which forces testability to be considered early. Its weakness is the same as the waterfall's: the left side is assumed complete before the right side begins." },
@@ -132,7 +132,7 @@ module.exports = {
         { head: "Scrum", items: ["Schwaber & Sutherland, 1995; from Takeuchi & Nonaka's \"rugby\" metaphor", "A **management framework**, silent on coding practice:", "- Fixed-length sprints (1–4 weeks)", "- Roles: Product Owner, Scrum Master, Developers", "- Product backlog, sprint backlog", "- Daily scrum, sprint review, retrospective", "The most widely adopted, and most certified, agile method."] },
         { head: "Kanban", items: ["From Toyota's production system; adapted to software by David J. Anderson (book, 2010)", "**Flow**, not iterations:", "- Visualize work on a board", "- Limit work in progress (WIP)", "- Pull new work when capacity frees up", "- Measure lead time and improve continuously", "Common in operations and maintenance teams."] },
       ],
-      notes: "Teams frequently combine these: Scrum for planning cadence, XP practices for engineering, and a Kanban-style board. Kernighan's \"hype cycle\" (Chapter 6) applies: each began as a good idea and acquired consultants and certifications. Shriram's advice: \"extract the kernel of truth.\"",
+      notes: "Teams frequently combine these: Scrum for planning cadence, XP practices for engineering, and a Kanban-style board. Kernighan's \"hype cycle\" (Chapter 6) applies: each began as a good idea and acquired consultants and certifications. Krishnamurthi's advice: \"extract the kernel of truth.\"",
     },
     {
       type: "diagram", title: "One Scrum sprint",
@@ -160,9 +160,9 @@ module.exports = {
       type: "text", title: "After agile: DevOps, CI/CD, and process-as-automation",
       body: [
         "In the 2000s the bottleneck moved from _writing_ code to _shipping_ it. **DevOps** (the name dates from around 2009) merges development and operations, and **continuous integration and delivery** (CI/CD) make every change automatically built, tested, and releasable. (The **Chapter 7 primer** covers operations, DevOps, and observability in depth.)",
-        "For process history, the important point is this: much of what earlier process models enforced with documents and meetings is now enforced by **tooling**. That is Shriram's \"friction\" argument in action: once tests run automatically at every commit, \"people are now doing it much more without even thinking about it.\"",
+        "For process history, the important point is this: much of what earlier process models enforced with documents and meetings is now enforced by **tooling**. That is Krishnamurthi's \"friction\" argument in action: once tests run automatically at every commit, \"people are now doing it much more without even thinking about it.\"",
       ],
-      callout: { label: "Connections", text: "Shriram (Ch. 2) on CI: \"the commit becomes my way of saying, this is a transaction boundary.\" He also raises its environmental cost.\n\nBall (Ch. 1): Microsoft replaced its testing discipline with rings and Insider builds, \"but we still get bitten.\"" },
+      callout: { label: "Connections", text: "Krishnamurthi (Ch. 2) on CI: \"the commit becomes my way of saying, this is a transaction boundary.\" He also raises its environmental cost.\n\nBall (Ch. 1): Microsoft replaced its testing discipline with rings and Insider builds, \"but we still get bitten.\"" },
       notes: "Staged rollout, feature flags, SRE, and the DORA metrics are all in the Chapter 7 primer.",
     },
     {
@@ -187,7 +187,7 @@ module.exports = {
         "- **Dynamic codebases outgrowing their checks** → **gradual typing** (TypeScript).",
       ],
       callout: { label: "The pattern", text: "A discipline is first taught as a **practice** (\"don't use goto,\" \"don't touch another module's data\"), then enforced by **tools**, and finally made the **default** in a language. Liskov (Ch. 3) states the motive: without enforcement, \"your team is no better than your weakest programmer.\"" },
-      notes: "This is the background for Shriram's claim that \"the tendency has been towards richer and richer expressiveness of programmer intent\" and his prediction that proof-assistant-based languages will feel normal in 20 years. It also explains his joke about systems researchers now evangelizing Rust: memory safety moved from SE discipline into the type system.",
+      notes: "This is the background for Krishnamurthi's claim that \"the tendency has been towards richer and richer expressiveness of programmer intent\" and his prediction that proof-assistant-based languages will feel normal in 20 years. It also explains his joke about systems researchers now evangelizing Rust: memory safety moved from SE discipline into the type system.",
     },
     {
       type: "timeline", title: "Languages that reshaped SE, 1957–1983",
@@ -205,7 +205,7 @@ module.exports = {
         "- **Domain-specific languages** let a team turn its domain knowledge into a language: SQL, regular expressions, build files, infrastructure-as-code, Racket's language-oriented programming.",
         "- **Adoption is social as well as technical.** Better languages often lose. Compatibility (C++ with C; TypeScript with JavaScript) frequently beats elegance (Kernighan, Ch. 6).",
       ],
-      callout: { label: "In Shriram's words", text: "PL and SE are \"the material science of computer science.\" Everyone else builds with the bricks and steel; \"somebody has to be thinking about bricks and steel.\"\n\nAnd: \"your favorite language is just the 17th one that everyone said will be the last thing you need to know.\"" },
+      callout: { label: "In Krishnamurthi's words", text: "PL and SE are \"the material science of computer science.\" Everyone else builds with the bricks and steel; \"somebody has to be thinking about bricks and steel.\"\n\nAnd: \"your favorite language is just the 17th one that everyone said will be the last thing you need to know.\"" },
     },
     {
       type: "check", title: "Check yourself before reading Chapter 2",

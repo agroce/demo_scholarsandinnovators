@@ -10,7 +10,7 @@
 | 4 | **b** | Productive people may simply "get to environments, where they can have bigger screens!" |
 | 5 | **c** | "The worst practice I see is only checking the happy path." |
 | 6 | **a** | "You do not make an exponential problem solvable in constant time, simply because you attach another algorithm to it." |
-| 7 | **d** | Contrast with Shriram (Ch. 2). |
+| 7 | **d** | Contrast with Krishnamurthi (Ch. 2). |
 
 ## Part B — what a full-credit answer includes
 
@@ -23,4 +23,4 @@
 - **Meaning (3):** Work on under-researched problems where no state of the art exists, instead of incremental improvements in crowded areas.
 - **Two examples (3):** Debugging ("awfully under-researched"); mining version histories ("only two or three papers"); also acceptable: specification mining, automated program repair, mutation testing, the roughly seven-year change of direction.
 - **Acknowledged cost (2):** Harder to publish (reviewers ask "Is that good, or is that bad?"), consoling PhD students after rejections, self-doubt, proposals asked "why should it be you?", easier when tenured or well funded.
-- **Transfer to industry (2):** A thoughtful position. For example: internal tooling or quality work nobody owns can be high-impact but hard to get credit for. Strong answers connect to Ball's "big blocks of uninterrupted time" (Ch. 1) or Shriram's safety/liveness portfolio (Ch. 2).
+- **Transfer to industry (2):** A thoughtful position. For example: internal tooling or quality work nobody owns can be high-impact but hard to get credit for. Strong answers connect to Ball's "big blocks of uninterrupted time" (Ch. 1) or Krishnamurthi's safety/liveness portfolio (Ch. 2).

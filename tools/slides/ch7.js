@@ -143,7 +143,7 @@ module.exports = {
         "\"We looked at the code with our own eyes... That would never fly in a design team\"",
       ],
       quote: "You can generate a whole app in a day if you have the right PRD.",
-      notes: "Yang's answer to Shriram's design question is the most concrete in the book. Her standard: a well-crafted survey or interview about the last month of use, not a 30-minute observation.",
+      notes: "Yang's answer to Krishnamurthi's design question is the most concrete in the book. Her standard: a well-crafted survey or interview about the last month of use, not a 30-minute observation.",
       terms: [
         ["PRD", "Product requirements document: the problem, users, goals and metrics, requirements, constraints, and what's out of scope.", "\"The product requirements doc is powerful, now.\""],
         ["Release cadence", "How often a team ships: quarterly, per sprint, daily, continuously. Set by risk, regulation, and test and monitoring strength.", "Quarterly launch → daily demos."],

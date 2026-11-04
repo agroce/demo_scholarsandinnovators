@@ -6,14 +6,14 @@
 
 ## Part A — Multiple choice
 
-**1.** Shriram's food supply chain analogy supports which claim?
+**1.** Krishnamurthi's food supply chain analogy supports which claim?
 
 - (a) Programmers should write all their own code
 - (b) Open-source software is inherently less trustworthy than proprietary software
 - (c) LLMs will eventually make testing unnecessary
 - (d) When the means of production become cheap and scalable, the means of verification must scale up
 
-**2.** According to Shriram, the key idea of Erlang is not that it is functional, but that:
+**2.** According to Krishnamurthi, the key idea of Erlang is not that it is functional, but that:
 
 - (a) it eliminates the need for message passing
 - (b) its VM makes processes/threads so cheap that new concurrency patterns become possible
@@ -34,21 +34,21 @@
 - (c) the system has no dead code
 - (d) the program always terminates in bounded time
 
-**5.** Shriram objects to using an LLM to generate both code and its tests because:
+**5.** Krishnamurthi objects to using an LLM to generate both code and its tests because:
 
 - (a) LLM-generated tests are too slow to run
 - (b) tests should always be written before code (TDD)
 - (c) it produces correlated failure: you need two genuinely different artifacts to check against each other
 - (d) LLMs can't write syntactically valid tests
 
-**6.** In Shriram's backwards software engineering course, students:
+**6.** In Krishnamurthi's backwards software engineering course, students:
 
 - (a) used only TDD throughout the semester
 - (b) studied methodologies for two months before writing any code
 - (c) built a system for a real client first, then derived the waterfall model from 1955-era constraints
 - (d) were assigned a different methodology every week
 
-**7.** Shriram says model checking's meaning drifted from ______ to ______.
+**7.** Krishnamurthi says model checking's meaning drifted from ______ to ______.
 
 - (a) hardware → databases
 - (b) a sound and complete analysis of a model → bug-finding exploration of a program
@@ -59,12 +59,12 @@
 
 ## Part B — Short answer (3–5 sentences each)
 
-**8.** Explain the difference between a *mistake* and a *misconception*. Use Shriram's example of the programmer trying to parse HTML with a regular expression.
+**8.** Explain the difference between a *mistake* and a *misconception*. Use Krishnamurthi's example of the programmer trying to parse HTML with a regular expression.
 
-**9.** Shriram claims "anytime you make something 10x cheaper, it changes the way you use it." Explain this with one of his examples (objects, threads, IP packets, phone calls, or languages) and one example of your own.
+**9.** Krishnamurthi claims "anytime you make something 10x cheaper, it changes the way you use it." Explain this with one of his examples (objects, threads, IP packets, phone calls, or languages) and one example of your own.
 
 ---
 
 ## Part C — Short essay (1–2 paragraphs)
 
-**10.** Shriram argues that design in other fields (architecture, electrical engineering) is "multimodal, multi-representational, multi-step," while software developers too often begin by "typing DEF space." Using his discussion of UML, OCL, and HtDP's design recipe, explain what he means when he calls examples "specs from below" and types "specs from above." Then propose *one* concrete practice your team could adopt to make your own design process more multi-representational.
+**10.** Krishnamurthi argues that design in other fields (architecture, electrical engineering) is "multimodal, multi-representational, multi-step," while software developers too often begin by "typing DEF space." Using his discussion of UML, OCL, and HtDP's design recipe, explain what he means when he calls examples "specs from below" and types "specs from above." Then propose *one* concrete practice your team could adopt to make your own design process more multi-representational.

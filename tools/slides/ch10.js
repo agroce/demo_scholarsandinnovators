@@ -206,7 +206,7 @@ module.exports = {
   connections: [
     ["Chapters 1–6", [
       "Liskov: CLU and Alphard; what modules don't capture",
-      "Shriram's design question gets its fullest answer here",
+      "Krishnamurthi's design question gets its fullest answer here",
       "Kernighan: Unix and pipes and filters as an architectural style",
     ]],
     ["Chapters 7–12", [

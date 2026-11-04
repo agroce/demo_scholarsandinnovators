@@ -23,4 +23,4 @@
 - **Diagnosis (2):** Pre-digested problems teach coding to a spec; real difficulty is understanding and formulating the domain problem (track power, adjacent cranes).
 - **Cross's idea (2):** Problem and solution co-evolve; artifacts teach you about the problem.
 - **Concrete course changes (4):** For example: projects with real stakeholders and messy domains; required problem framing and concept/domain models before coding; critique of exemplars (Shaw); reflection journals (Schön); LLMs used to generate prototypes quickly as probes of the problem (Beck's cheap experiments); assessment of specifications and design rationale, not just passing tests.
-- **Cross-chapter (2):** Shaw (problem setting, exemplars, curriculum as design), Beck (act of creation changes what you want; pre-med analogy), Shriram (do-it-twice, the design crit).
+- **Cross-chapter (2):** Shaw (problem setting, exemplars, curriculum as design), Beck (act of creation changes what you want; pre-med analogy), Krishnamurthi (do-it-twice, the design crit).

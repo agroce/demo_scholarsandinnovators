@@ -272,7 +272,7 @@ But legacy is different from momentary success: "did you actually change the way
 
 ## Theme 13: Design is a discipline
 
-Responding to Shriram's question about design, Yang separates **design** from **art**. Product design "is a lot of process and discipline. How do you know that something is good? How do you run your user interviews? What problem are you solving?" People "who don't understand design think it's very unknowable."
+Responding to Krishnamurthi's question about design, Yang separates **design** from **art**. Product design "is a lot of process and discipline. How do you know that something is good? How do you run your user interviews? What problem are you solving?" People "who don't understand design think it's very unknowable."
 
 She is critical of how computer scientists evaluate tools: "programming language designers are not very actually well-informed about design... Who did you ask? Who did you test it with?" A good designer knows a 30-minute observation won't answer the question, and will instead "construct a well-crafted survey, or a well-crafted interview, and ask them how this has been helpful to them over the last month." In grad school, "we looked at the code with our own eyes, that's it. That would never fly in a design team."
 
@@ -298,7 +298,7 @@ Her "what should I have asked" is the future of software development. She disagr
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Both moved verification research toward practice. Ball's assurance spectrum includes Yang's move from proof to observation. Both mention Sumit Gulwani's programming by example.
-- **Chapter 2 (Krishnamurthi):** Shriram asked the design question; Yang gives the sharpest answer in the book about design as a *discipline*. Both are PL people working on how languages express programmer intent.
+- **Chapter 2 (Krishnamurthi):** Krishnamurthi asked the design question; Yang gives the sharpest answer in the book about design as a *discipline*. Both are PL people working on how languages express programmer intent.
 - **Chapter 3 (Liskov):** Yang's "pick the right abstraction" and "watch where it leaks" extend Liskov's abstraction to systems built from services the programmer doesn't control.
 - **Chapter 5 (Zeller):** Both see testing and debugging as the unglamorous bottleneck for AI-generated code.
 - **Chapter 6 (Kernighan):** Kernighan's "paradigm shift" and Yang's "platform shift"; both are skeptical of AI hype for large systems. Yang says the craft of code has "crumbled"; Kernighan's books are about that craft.

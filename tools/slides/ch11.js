@@ -185,7 +185,7 @@ module.exports = {
     ["Chapters 1–6", [
       "Ball asked where process and people were; Beck answers",
       "Holzmann's real post-mortems; Zeller's unit tests (Beck's xUnit)",
-      "Shriram: proof languages normal soon; Beck now uses Lean",
+      "Krishnamurthi: proof languages normal soon; Beck now uses Lean",
     ]],
     ["Chapters 7–12", [
       "Yang: demos disguised as products; cheap experiments",

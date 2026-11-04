@@ -23,4 +23,4 @@
 - **Hoodlet's factors (3):** consequences of failure (patient harm, money at stake), required update cadence, deployment constraints (air gap, USB patches), regulation (RUO vs. IVD), exposure to attackers.
 - **Argument (3):** A clear position, for example "risk and cost of change determine the process," with both examples placed correctly: waterfall acceptable for the air-gapped instrument; fast, test-backed delivery for internet-facing apps.
 - **Security's place (2):** Security raises the cost of slowness when the software is exposed (patch velocity), and depends on testing and CI/CD. It is not a separate phase.
-- **Cross-chapter (2):** Shriram's derivation of waterfall from its constraints and Boehm–Turner home grounds (Ch. 2 primer); Holzmann's JPL, where rigor is justified (Ch. 4); Yang's quarterly-to-daily cadence shift (Ch. 7).
+- **Cross-chapter (2):** Krishnamurthi's derivation of waterfall from its constraints and Boehm–Turner home grounds (Ch. 2 primer); Holzmann's JPL, where rigor is justified (Ch. 4); Yang's quarterly-to-daily cadence shift (Ch. 7).

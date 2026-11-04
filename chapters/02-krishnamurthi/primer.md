@@ -10,7 +10,7 @@
 
 **Part 2: Programming languages and SE.** How recurring software engineering problems (control flow, modularity, data hiding, memory errors, concurrency, scale) were repeatedly "solved" by moving them into language design.
 
-> **Why read this first.** Shriram describes teaching the waterfall model _backwards_: students derive it from 1955 constraints and come to respect it. To appreciate that move, and to judge the very different accounts of the waterfall from Zeller, Kernighan, and Holzmann later in the book, you need the real history. Shriram is also a programming-languages researcher. His claims that "your favorite language is just the 17th one" and that PL is "the material science of computer science" make most sense if you know how SE and PL ideas have traded places.
+> **Why read this first.** Krishnamurthi describes teaching the waterfall model _backwards_: students derive it from 1955 constraints and come to respect it. To appreciate that move, and to judge the very different accounts of the waterfall from Zeller, Kernighan, and Holzmann later in the book, you need the real history. Krishnamurthi is also a programming-languages researcher. His claims that "your favorite language is just the 17th one" and that PL is "the material science of computer science" make most sense if you know how SE and PL ideas have traded places.
 
 ---
 
@@ -31,7 +31,7 @@ The central variable is the **cost of change**. If changing a decision late is v
 **2.** How often does working software reach a real user?
 **3.** Where in the process is risk identified, and who pays when it's found late?
 
-Process models are descriptions, and often idealizations, of how work is organized. Real projects mix models. A useful way to compare them is to ask what each assumes about the cost of change and the stability of requirements. Shriram's 1955 exercise works because it fixes those assumptions: punched cards, assembly language, and a customer (the military) who wants a system defined up front.
+Process models are descriptions, and often idealizations, of how work is organized. Real projects mix models. A useful way to compare them is to ask what each assumes about the cost of change and the stability of requirements. Krishnamurthi's 1955 exercise works because it fixes those assumptions: punched cards, assembly language, and a customer (the military) who wants a system defined up front.
 
 ## The 1950s: SAGE and the first "lifecycle"
 
@@ -41,7 +41,7 @@ In 1956 **Herbert Benington** described how SAGE software was produced as a sequ
 
 When the paper was republished in 1983, Benington added a foreword saying the description was misleading. SAGE had in fact started by building an **experimental prototype**, and he would not recommend a strictly top-down sequential process.
 
-> **Connection to Chapter 2.** Shriram asks students to imagine being "a 1955 software developer" building "a defense system." That is almost exactly SAGE. The real SAGE developers already knew they needed a prototype.
+> **Connection to Chapter 2.** Krishnamurthi asks students to imagine being "a 1955 software developer" building "a defense system." That is almost exactly SAGE. The real SAGE developers already knew they needed a prototype.
 
 Source: H. D. Benington, "Production of Large Computer Programs," 1956 symposium; reprinted in IEEE Annals of the History of Computing, 1983, with a new foreword. Larman and Basili's 2003 history of iterative development discusses the foreword.
 
@@ -86,7 +86,7 @@ Royce did warn that iteration is tolerable only between adjacent steps. Feedback
 - **Hardware coupling.** When software ships with hardware (spacecraft, telephone switches), parts of the schedule really are sequential.
 Many organizations that were 'doing waterfall' in fact iterated informally, while documenting a waterfall. That is one reason Zeller (Chapter 5) can say the pure waterfall "has never ever been done by anyone really."
 
-> **Four accounts in this book.** **Shriram** (Ch. 2): derive it from 1955 constraints and respect it.
+> **Four accounts in this book.** **Krishnamurthi** (Ch. 2): derive it from 1955 constraints and respect it.
 **Zeller** (Ch. 5): the pure form was never really practiced.
 **Kernighan** (Ch. 6): a contracting model for adversaries.
 **Holzmann** (Ch. 4): the phases are a frame for measuring defects scientifically.
@@ -188,7 +188,7 @@ Signatories included Kent Beck, Ward Cunningham, Martin Fowler, Ken Schwaber, Je
 - Measure lead time and improve continuously
 - Common in operations and maintenance teams.
 
-Teams frequently combine these: Scrum for planning cadence, XP practices for engineering, and a Kanban-style board. Kernighan's "hype cycle" (Chapter 6) applies: each began as a good idea and acquired consultants and certifications. Shriram's advice: "extract the kernel of truth."
+Teams frequently combine these: Scrum for planning cadence, XP practices for engineering, and a Kanban-style board. Kernighan's "hype cycle" (Chapter 6) applies: each began as a good idea and acquired consultants and certifications. Krishnamurthi's advice: "extract the kernel of truth."
 
 ## One Scrum sprint
 
@@ -202,9 +202,9 @@ Scrum makes Royce's "involve the customer" and Boehm's "plan the next loop" happ
 
 In the 2000s the bottleneck moved from _writing_ code to _shipping_ it. **DevOps** (the name dates from around 2009) merges development and operations, and **continuous integration and delivery** (CI/CD) make every change automatically built, tested, and releasable. (The **Chapter 7 primer** covers operations, DevOps, and observability in depth.)
 
-For process history, the important point is this: much of what earlier process models enforced with documents and meetings is now enforced by **tooling**. That is Shriram's "friction" argument in action: once tests run automatically at every commit, "people are now doing it much more without even thinking about it."
+For process history, the important point is this: much of what earlier process models enforced with documents and meetings is now enforced by **tooling**. That is Krishnamurthi's "friction" argument in action: once tests run automatically at every commit, "people are now doing it much more without even thinking about it."
 
-> **Connections.** Shriram (Ch. 2) on CI: "the commit becomes my way of saying, this is a transaction boundary." He also raises its environmental cost.
+> **Connections.** Krishnamurthi (Ch. 2) on CI: "the commit becomes my way of saying, this is a transaction boundary." He also raises its environmental cost.
 
 Ball (Ch. 1): Microsoft replaced its testing discipline with rings and Insider builds, "but we still get bitten."
 
@@ -255,7 +255,7 @@ Barry Boehm and Richard Turner (_Balancing Agility and Discipline_, 2003) argued
 
 > **The pattern.** A discipline is first taught as a **practice** ("don't use goto," "don't touch another module's data"), then enforced by **tools**, and finally made the **default** in a language. Liskov (Ch. 3) states the motive: without enforcement, "your team is no better than your weakest programmer."
 
-This is the background for Shriram's claim that "the tendency has been towards richer and richer expressiveness of programmer intent" and his prediction that proof-assistant-based languages will feel normal in 20 years. It also explains his joke about systems researchers now evangelizing Rust: memory safety moved from SE discipline into the type system.
+This is the background for Krishnamurthi's claim that "the tendency has been towards richer and richer expressiveness of programmer intent" and his prediction that proof-assistant-based languages will feel normal in 20 years. It also explains his joke about systems researchers now evangelizing Rust: memory safety moved from SE discipline into the type system.
 
 ## Languages that reshaped SE, 1957–1983
 
@@ -284,7 +284,7 @@ This is the background for Shriram's claim that "the tendency has been towards r
 - **Domain-specific languages** let a team turn its domain knowledge into a language: SQL, regular expressions, build files, infrastructure-as-code, Racket's language-oriented programming.
 - **Adoption is social as well as technical.** Better languages often lose. Compatibility (C++ with C; TypeScript with JavaScript) frequently beats elegance (Kernighan, Ch. 6).
 
-> **In Shriram's words.** PL and SE are "the material science of computer science." Everyone else builds with the bricks and steel; "somebody has to be thinking about bricks and steel."
+> **In Krishnamurthi's words.** PL and SE are "the material science of computer science." Everyone else builds with the bricks and steel; "somebody has to be thinking about bricks and steel."
 
 And: "your favorite language is just the 17th one that everyone said will be the last thing you need to know."
 

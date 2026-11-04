@@ -29,7 +29,7 @@ module.exports = {
         "The joy is the feedback loop: other people using what you wrote",
       ],
       quote: "It's hard to get the program to do what you want. That's programming, in some sense.",
-      notes: "Kernighan on class assignments: 'totally useless. From any standpoint.' And at Google most people worked 'on an infinitesimal part of a very large program... changing the color of the buttons.' Contrast with Shriram's view of batch computing's hidden benefits.",
+      notes: "Kernighan on class assignments: 'totally useless. From any standpoint.' And at Google most people worked 'on an infinitesimal part of a very large program... changing the color of the buttons.' Contrast with Krishnamurthi's view of batch computing's hidden benefits.",
       terms: [
         ["Time-sharing / interactive computing", "Many users share one computer through terminals, getting immediate feedback instead of submitting batch jobs. CTSS and Project MAC at MIT.", "Where programming 'started to click' for Kernighan."],
         ["Computational notebooks", "Web-based documents mixing code cells, output, and prose (Jupyter, Colab). Easy to start, but they hide files and environments and allow out-of-order execution.", "'The concept of a file system is foreign to students today.'"],
@@ -175,8 +175,8 @@ module.exports = {
   ],
   connections: [
     ["Chapters 1–3", [
-      "A third waterfall story: Shriram's 1955 derivation vs. Kernighan's adversarial contract",
-      "Kernighan's hype cycle matches Shriram's \"kernel of truth\"",
+      "A third waterfall story: Krishnamurthi's 1955 derivation vs. Kernighan's adversarial contract",
+      "Kernighan's hype cycle matches Krishnamurthi's \"kernel of truth\"",
       "OOP as a scaling mechanism: Liskov's modularity in practice",
     ]],
     ["Chapters 4–5", [
@@ -188,7 +188,7 @@ module.exports = {
   discussion: [
     "Pick three Elements of Programming Style rules. Do they hold for Python or Rust? Rewrite one example.",
     "Write the first five tests for an add-up-numbers program, and justify each.",
-    "Waterfall: Shriram's history, Kernighan's contract, or Holzmann's metrics. Which fits a project you know?",
+    "Waterfall: Krishnamurthi's history, Kernighan's contract, or Holzmann's metrics. Which fits a project you know?",
     "Apply the hype cycle to a current trend (microservices, vibe coding). Where is it now, and what's its kernel?",
     "Propose and defend an LLM policy for this course, using Kernighan's seminar rule as a starting point.",
   ],

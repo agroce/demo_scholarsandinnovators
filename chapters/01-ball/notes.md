@@ -62,7 +62,7 @@ Ball places this in a long tradition: "pre- and post-conditions, and Eiffel and 
 >
 > **Definition.** A technique that exhaustively explores the states of a model of a system to decide whether the model satisfies a property, often one written in temporal logic. If the property fails, the model checker produces a **counterexample**. Model checking was developed in the early 1980s by Clarke and Emerson and, independently, by Queille and Sifakis. It succeeded first in hardware verification.
 >
-> **In the interview.** The chapter introduction calls SLAM "the most visible evidence that model checking was not limited to hardware" but could work on real software. Ball says he learned model checking at Bell Labs (Holzmann's SPIN, Kurshan), and that much of his career was spent moving between program analysis and model checking. See also Shriram (Chapter 2), who describes how the *meaning* of "model checking" drifted from sound and complete analysis of a model toward bug-finding exploration of real programs.
+> **In the interview.** The chapter introduction calls SLAM "the most visible evidence that model checking was not limited to hardware" but could work on real software. Ball says he learned model checking at Bell Labs (Holzmann's SPIN, Kurshan), and that much of his career was spent moving between program analysis and model checking. See also Krishnamurthi (Chapter 2), who describes how the *meaning* of "model checking" drifted from sound and complete analysis of a model toward bug-finding exploration of real programs.
 
 > [!NOTE]
 > **KEY TERM: Predicate abstraction**
@@ -119,7 +119,7 @@ He keeps qualifying all this enthusiasm. "There's no silver bullet." Verificatio
 >
 > **Definition.** A *SAT solver* decides whether a boolean formula has a satisfying assignment. An *SMT* (Satisfiability Modulo Theories) solver extends this to formulas over richer theories: integers, arrays, bit-vectors, and so on. Both problems are hard in theory (SAT is NP-complete, and some SMT theories are undecidable), yet modern solvers handle huge real-world instances. They are the engines inside many verification, symbolic execution, and test-generation tools.
 >
-> **In the interview.** Ball recalls that in the early 2000s "it wasn't very clear... that we're going to have the SMT revolution." SLAM was a bet that solvers would get faster, "as Bill Gates did." Z3 (de Moura and Bjørner) later became one of the most widely used SMT solvers. Shriram (Chapter 2) jokes that "we throw SAT solvers at undecidable problems."
+> **In the interview.** Ball recalls that in the early 2000s "it wasn't very clear... that we're going to have the SMT revolution." SLAM was a bet that solvers would get faster, "as Bill Gates did." Z3 (de Moura and Bjørner) later became one of the most widely used SMT solvers. Krishnamurthi (Chapter 2) jokes that "we throw SAT solvers at undecidable problems."
 
 > [!NOTE]
 > **KEY TERM: "No silver bullet" / return on investment (ROI) of quality techniques**
@@ -133,7 +133,7 @@ He keeps qualifying all this enthusiasm. "There's no silver bullet." Verificatio
 >
 > **Definition.** A program is *memory safe* if it can't access memory it shouldn't. That rules out buffer overflows, use-after-free, and double free. Rust enforces memory safety without a garbage collector through its **ownership and borrowing** type system: each value has one owner, references are checked by the compiler, and data can't be mutably aliased.
 >
-> **In the interview.** Ball sees Rust "becoming much more central to systems programming" while admitting it is hard to "make good use of the type system and not clone everything." When discussing testing, he hopes stronger interfaces like Rust's mean "we don't have to worry as much about memory safety, we don't have to maybe test for that." Shriram (Chapter 2) jokes about systems researchers becoming Rust evangelists.
+> **In the interview.** Ball sees Rust "becoming much more central to systems programming" while admitting it is hard to "make good use of the type system and not clone everything." When discussing testing, he hopes stronger interfaces like Rust's mean "we don't have to worry as much about memory safety, we don't have to maybe test for that." Krishnamurthi (Chapter 2) jokes about systems researchers becoming Rust evangelists.
 
 > [!NOTE]
 > **KEY TERM: Dependent types**
@@ -155,7 +155,7 @@ He also notes that Microsoft "got rid of the testing discipline" (dedicated test
 >
 > **Definition.** Re-running existing tests after a change to check that behavior that used to work still works. A *regression* is a bug where previously correct behavior breaks. Regression suites are usually automated and run on every change.
 >
-> **In the interview.** The MakeCode compiler has "a set of tests, to make sure we don't regress the compiler." Ball contrasts the well-tested compiler with the barely tested GUI. Shriram (Chapter 2) traces the analytics behind regression testing to Weyuker and Ostrand's work at Bell Labs.
+> **In the interview.** The MakeCode compiler has "a set of tests, to make sure we don't regress the compiler." Ball contrasts the well-tested compiler with the barely tested GUI. Krishnamurthi (Chapter 2) traces the analytics behind regression testing to Weyuker and Ostrand's work at Bell Labs.
 
 > [!NOTE]
 > **KEY TERM: Smoke test**
@@ -176,7 +176,7 @@ He also notes that Microsoft "got rid of the testing discipline" (dedicated test
 >
 > **Definition.** Instead of writing individual input/output examples, the tester states a *property* that should hold for all inputs (for example, `reverse(reverse(xs)) == xs`). A framework (QuickCheck, Hypothesis, and others) generates many random or systematic inputs to look for a counterexample, then usually *shrinks* any failure to a minimal case.
 >
-> **In the interview.** Ball lists PBT and symbolic execution as advances that are available, but notes "it's still quite a bit of work... to integrate that tool into your test framework." Shriram (Chapter 2) gives a fuller history of PBT.
+> **In the interview.** Ball lists PBT and symbolic execution as advances that are available, but notes "it's still quite a bit of work... to integrate that tool into your test framework." Krishnamurthi (Chapter 2) gives a fuller history of PBT.
 
 > [!NOTE]
 > **KEY TERM: Monitoring and profiling**
@@ -250,7 +250,7 @@ Ball, who calls himself "sort of a skeptic," gives one of the more measured AI d
 >
 > **Definition.** Knowledge about a system (why things are designed as they are, which parts are fragile, unwritten conventions) that is passed on in conversation, pair programming, and mentoring instead of being documented. Sometimes called *tribal knowledge*. Teams lose it when people leave.
 >
-> **In the interview.** Ball recalls that at Bell Labs people talked about "the oral culture" around huge codebases like the 5ESS switch. LLMs can't just "ingest a huge code base and understand it." Instead, developers are "leaving breadcrumbs" and decomposing tasks, writing down oral culture for machines. Compare Liskov's and Shriram's emphasis on specifications as a second, independent statement of intent.
+> **In the interview.** Ball recalls that at Bell Labs people talked about "the oral culture" around huge codebases like the 5ESS switch. LLMs can't just "ingest a huge code base and understand it." Instead, developers are "leaving breadcrumbs" and decomposing tasks, writing down oral culture for machines. Compare Liskov's and Krishnamurthi's emphasis on specifications as a second, independent statement of intent.
 
 > [!NOTE]
 > **KEY TERM: Benchmark validity and survivorship bias**
@@ -287,7 +287,7 @@ Ball, who calls himself "sort of a skeptic," gives one of the more measured AI d
 
 ## Connections to other chapters
 
-- **Chapter 2 (Krishnamurthi):** Groce quotes Ball's "details matter" answer back to Shriram, who instead argues that "nothing" has stayed constant except humans. Shriram's "means of production vs. means of verification" thesis echoes Ball's worry that AI-generated code "sort of works" without doing what you want. The methodology question Groce asks Shriram came from Ball.
+- **Chapter 2 (Krishnamurthi):** Groce quotes Ball's "details matter" answer back to Krishnamurthi, who instead argues that "nothing" has stayed constant except humans. Krishnamurthi's "means of production vs. means of verification" thesis echoes Ball's worry that AI-generated code "sort of works" without doing what you want. The methodology question Groce asks Krishnamurthi came from Ball.
 - **Chapter 3 (Liskov):** Ball's pre/postconditions and interface rules are a direct descendant of Liskov's specification-centric view of abstraction. Both predict that specifications will matter *more* with AI-generated code.
 
 ## Discussion questions

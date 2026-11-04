@@ -147,7 +147,7 @@ module.exports = {
         "Cross: build an artifact and let it teach you the problem",
       ],
       quote: "With its contemptuous view of what it called big design up front, it lumped all kinds of thoughtful design thinking into the same category as excessive documentation.",
-      notes: "Contrast Beck (Ch. 11): 'If you build the perfect foundation, you never get to round two.' Jackson agrees with Shriram that CS avoids design, and teaches 'well-specified, pre-digested problems.'",
+      notes: "Contrast Beck (Ch. 11): 'If you build the perfect foundation, you never get to round two.' Jackson agrees with Krishnamurthi that CS avoids design, and teaches 'well-specified, pre-digested problems.'",
       terms: [
         ["Big design up front", "Agile's pejorative for detailed design before code; critics say it discouraged valuable design thinking.", "\"Contemptuous view.\""],
         ["Design reuse", "Reuse proven designs (concepts, patterns), innovate only where needed.", "Every social app has the same concepts."],
@@ -191,7 +191,7 @@ module.exports = {
   connections: [
     ["Chapters 1–9", [
       "Liskov and Guttag: data abstraction beats OOP",
-      "Shriram's design question, answered from design culture",
+      "Krishnamurthi's design question, answered from design culture",
       "Schneider: conceptual integrity and specifications",
     ]],
     ["Chapters 10–11", [

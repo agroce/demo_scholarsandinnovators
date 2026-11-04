@@ -43,7 +43,7 @@ The working style changed too. With easy debugging, "a programmer today can use 
 
 But **documentation** has gotten worse, so "you often can't do mental simulation today even if you wanted to." He knew OS/360 down to "the communications vector table at hex location 10." His explanation for the decline: graphical interfaces were meant to be self-documenting, "functionality could be discovered by observation and experimentation," and vendors were spared keeping code and documentation consistent. "Software developers had an incentive not to be providing documentation."
 
-Compare Holzmann (Ch. 4) and Shriram (Ch. 2) on batch computing teaching care, and Kernighan (Ch. 6), for whom interactive computing was "a giant step forward."
+Compare Holzmann (Ch. 4) and Krishnamurthi (Ch. 2) on batch computing teaching care, and Kernighan (Ch. 6), for whom interactive computing was "a giant step forward."
 
 > [!NOTE]
 > **KEY TERM: Mental simulation (desk checking)**
@@ -355,7 +355,7 @@ His answer to "what should I have asked?": "In anticipation of this question, I 
 ## Connections to other chapters
 
 - **Chapter 1 (Ball):** Assurance across the spectrum; both lament what students don't learn about specifications.
-- **Chapter 2 (Krishnamurthi):** Shriram's waterfall from constraints; Schneider's Agile from engineering prototyping. Shriram's language-centric view meets Schneider's "if only we designed the right language" skepticism.
+- **Chapter 2 (Krishnamurthi):** Krishnamurthi's waterfall from constraints; Schneider's Agile from engineering prototyping. Krishnamurthi's language-centric view meets Schneider's "if only we designed the right language" skepticism.
 - **Chapter 3 (Liskov):** Representation invariants; Parnas; modularity as the open question. Liskov's replication work and Schneider's state machine approach are two foundations of fault-tolerant systems.
 - **Chapter 4 (Holzmann):** Both insist programmers need specifications and logic; safety/liveness is the basis of Holzmann's LTL.
 - **Chapter 5 (Zeller):** RV vs. fuzzing; specification coverage vs. code coverage; oracles.

@@ -108,7 +108,7 @@ Several questions come up in interview after interview. Track them through the s
 - **How do we know software works?** Proof, model checking, testing, and observation in production (Ball, Holzmann, Zeller, Yang, Schneider). What does each give you, and what does each miss?
 - **What AI changes.** Almost every interviewee was asked. Their answers range from "more of what it already was" to "the bottleneck is now specification." Compare them.
 - **Is software engineering engineering?** Shaw's maturation model, Holzmann's JPL standards, and Kernighan's craft view.
-- **Shriram's design question,** which Groce asked of nearly everyone: what is good design, and how do we teach it?
+- **Krishnamurthi's design question,** which Groce asked of nearly everyone: what is good design, and how do we teach it?
 
 ## Course policies
 
