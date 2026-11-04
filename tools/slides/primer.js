@@ -251,11 +251,12 @@ const plain = (s) => s.replace(/\*\*([^*]+)\*\*/g, "$1").replace(/_([^_]+)_/g, "
       (S.boxes || []).forEach((b, i) => {
         byId[b.id] = b;
         const st = BOX[b.style || "light"];
-        const o = { x: b.x, y: b.y, w: b.w, h: b.h, rectRadius: 0.08, objectName: `box-${b.id}` };
+        const o = { x: b.x, y: b.y, w: b.w, h: b.h, objectName: `box-${b.id}` };
+        if (b.shape !== "oval") o.rectRadius = 0.08; // an ellipse has no corner adjust; writing one makes PowerPoint repair the file
         o.fill = st.fill ? { color: st.fill } : { type: "none" };
         o.line = st.line ? { color: st.line, width: 1.25, dashType: st.dash ? "dash" : "solid" } : { type: "none" };
         if (st.fill || st.line) s.addShape(b.shape === "oval" ? pres.shapes.OVAL : pres.shapes.ROUNDED_RECTANGLE, o);
-        s.addText(runs(b.text, { fontSize: b.fs || 14, color: st.color, bold: b.bold !== false && b.style !== "note" }), { x: b.x + 0.05, y: b.y, w: b.w - 0.1, h: b.h, align: b.align || "center", valign: "middle", margin: 2, isTextBox: true, italic: b.style === "note", objectName: `boxtext-${b.id}` });
+        if (b.text) s.addText(runs(b.text, { fontSize: b.fs || 14, color: st.color, bold: b.bold !== false && b.style !== "note" }), { x: b.x + 0.05, y: b.y, w: b.w - 0.1, h: b.h, align: b.align || "center", valign: "middle", margin: 2, isTextBox: true, italic: b.style === "note", objectName: `boxtext-${b.id}` });
       });
       (S.arrows || []).forEach((a, i) => {
         const A = byId[a.from], B = byId[a.to];
