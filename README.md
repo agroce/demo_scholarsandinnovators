@@ -76,7 +76,9 @@ belief, here:
   future.
   
 Alex Groce
+
 Flagstaff, Arizona
+
 November 2026
 
 ## What's here
