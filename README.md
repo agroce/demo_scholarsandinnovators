@@ -7,8 +7,10 @@ software engineering courses.
 ## READ THIS FIRST
 
 This repository offers a way to transform my book,  *Scholars &
-Innovators in Modern Programming*, into a course on software
-engineering.  You may think of it as a "mixin" that takes the book and
+Innovators in Modern Programming*, into a **full course on software
+engineering** that covers all the important topics of the field (as
+defined by SWEBOK), some
+in considerable depth.  You may think of it as a "mixin" that takes the book and
 turns it into a one-semester course on software engineering.  I think
 it's a good course, and I would like to offer a few reasons for that
 belief, here:
@@ -49,7 +51,13 @@ belief, here:
   absent from the loop, and software systems were developed for the
   inscrutable purposes of artificial intelligences, such as producing
   paperclips, many of the questions this course addresses would still
-  be important to software development.
+  be important to software development.  Formulas for scheduling and
+  budgeting developed for a world where humans must write every line
+  of code, and, to some extent, where more code was original and less
+  code was from a library or framework (and thus described, if at all, in an
+  SBOM and external documentation) are not likely to survive the
+  future.  The ideas here are meant to survive and be important
+  whatever the future holds, with reasonable limits.
   
 * Finally, while there is a surprising amount of agreement between
   people from different camps (note that the last two chapters of this
@@ -148,7 +156,13 @@ Each `chN.js` file holds that chapter's slide content: themes, quotes, term defi
 
 ## A note on answer keys
 
-If this repository is public, students can read the quiz and test keys. Instructors who reuse questions for grading may want to keep keys in a private copy.
+If this repository is public, students can read the quiz and test
+keys. Instructors who reuse questions for grading may want to keep
+keys in a private copy, but of course the ones I offer are visible in
+this repo. In general, I offer these quizzes and tests as
+examples of the kinds of questions you can ask; the best practice is
+to derive your own, perhaps asking a friendly LLM to help, for your
+own course.
 
 ## License
 
