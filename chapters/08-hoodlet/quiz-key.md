@@ -9,7 +9,7 @@
 | 3 | **a** | "It's a velocity problem, and unless you have robust testing, everything is slow." |
 | 4 | **d** | The air-raid sirens and software-defined radio. (c) describes technical *debt*. |
 | 5 | **b** | Cites "The Attacker Moves Second." |
-| 6 | **c** | RUO devices had much more lenient timelines. |
+| 6 | **c** | His words: "otherwise you had to do a full recall." RUO devices had much more lenient timelines. The underlying FDA guidance (2016) is nonbinding and more nuanced: within 60 days a fix could be handled without a Part 806 correction report; see the instructor note in Theme 11. |
 | 7 | **a** | "It was like I had just called their baby ugly." |
 
 ## Part B — what a full-credit answer includes

@@ -10,7 +10,7 @@
 | 4 | **c** | Graf–Saïdi predicate abstraction tracks a finite set of boolean predicates, giving a finite over-approximation. |
 | 5 | **b** | Compiler regression tests; GUI gets user/manual testing and "a weekly smoke test." |
 | 6 | **b** | Change test-dead regions; output on that test must be unchanged (Le, Afshari, Su, PLDI 2014). |
-| 7 | **a** | "In the case of Flash Fill is never even seen." |
+| 7 | **a** | "The program in the case of Flash Fill is never even seen": users check the results, not the code. |
 
 ## Part B — what a full-credit answer includes
 

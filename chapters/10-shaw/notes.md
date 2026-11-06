@@ -6,7 +6,7 @@
 
 ## About Mary Shaw
 
-Shaw is the Alan J. Perlis Professor of Computer Science at Carnegie Mellon. Her career has had one goal: a genuine **engineering discipline for software**. With David Garlan she founded the systematic study of **software architecture**. She was Chief Scientist of CMU's Software Engineering Institute from 1984 to 1987, received the ACM SIGSOFT Outstanding Research Award with Garlan in 2011, and was awarded the U.S. National Medal of Technology and Innovation in 2014. Earlier, with Bill Wulf and Ralph London, she designed the abstract data type language Alphard.
+Shaw is the Alan J. Perlis Professor of Computer Science at Carnegie Mellon. Her career has had one goal: a genuine **engineering discipline for software**. With David Garlan she helped establish **software architecture** as a distinct research discipline (alongside Perry and Wolf's 1992 "Foundations" paper). She was Chief Scientist of CMU's Software Engineering Institute from 1984 to 1987, received the ACM SIGSOFT Outstanding Research Award with Garlan in 2011, and was awarded the U.S. National Medal of Technology and Innovation in 2014. Earlier, with Bill Wulf and Ralph London, she designed the abstract data type language Alphard.
 
 Groce knew her work from graduate school at CMU, where Garlan was on his thesis committee. After the interview Shaw wrote to him: "That was fun!"
 
@@ -268,7 +268,7 @@ Why don't developers? Schedules. Brooks estimated that turning a program into a 
 
 Evidence: the Toyota unintended acceleration investigation. In Phil Koopman's review, Toyota "were supposed to be doing X, Y, and Z, but by golly, they weren't." (Groce mentions Holzmann's NASA report on the same case.)
 
-On CrowdStrike (2024), Shaw's group of colleagues said in unison: "They didn't do a preliminary release with just a few people??? What!" They also guessed a null pointer error; it turned out to be a corrupted table interpreted as addresses. "We were pretty close!"
+On CrowdStrike (2024), Shaw's group of colleagues said in unison: "They didn't do a preliminary release with just a few people??? What!" They also guessed a null pointer error; Shaw recalls the cause as "a corrupted table... being interpreted as addresses," a corrupted-pointer problem. "We were pretty close!" (CrowdStrike's root cause analysis, August 2024, is more specific: a new template type defined 21 input fields, but the sensor code supplied only 20, and the first update to use the 21st field, Channel File 291, made the Content Interpreter read past the end of its input array. The out-of-bounds read crashed Windows in kernel mode. A validator bug and the lack of a staged rollout let it reach about 8.5 million machines. Students can compare that account with Shaw's recollection.)
 
 > [!NOTE]
 > **KEY TERM: Software liability and warranty disclaimers**

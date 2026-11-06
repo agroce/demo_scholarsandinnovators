@@ -41,7 +41,7 @@
 - (c) System prompts can't be changed after release
 - (d) It breaks the same-origin policy
 
-**6.** For federally regulated diagnostic (IVD) devices at the time Hoodlet describes, what happened if a vulnerability wasn't patched or mitigated within 60 days?
+**6.** As Hoodlet describes the rule his teams worked under for regulated diagnostic (IVD) devices, what happened if a vulnerability wasn't patched or mitigated within 60 days?
 
 - (a) A fine was paid
 - (b) Nothing; the deadline was advisory

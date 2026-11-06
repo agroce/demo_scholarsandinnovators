@@ -18,7 +18,7 @@ Groce's introduction is personal: Holzmann was his "first 'boss'" after his PhD.
 | What has changed | AI adds the excuse "the machine didn't quite understand me," but the "almost right" problem remains |
 | What programmers need | Logic, automata theory, and philosophy |
 | His tools | Pico (image editing), Spin (model checking), Cobra (interactive static analysis) |
-| Theory vs. practice | Büchi automata waited decades for Pnueli's LTL; Bell Labs' research culture |
+| Theory vs. practice | Omega automata waited for an application in program verification (Pnueli's LTL); Bell Labs' research culture |
 | Explaining as science | Publishing, teaching, and **writing the manual** expose bad design |
 | Heroes | Amir Pnueli, Ken Thompson ("Is there any other way?"), Rob Pike |
 | AI | Astonishing, but we don't know *why* it works; test it like a person |
@@ -121,6 +121,9 @@ Holzmann gives "the important answer first": theory with no known application ca
 
 > "Omega automata theory was developed by Buchi and others before there was any application... It had zero applications until Amir Pnueli came along with linear temporal logic, and boom, there was the application."
 
+> [!NOTE]
+> **Instructor note.** Holzmann's point is about applications to computing practice, and it holds there. Strictly, Büchi's 1962 automata already had an application in *logic*: he used them to prove the monadic second-order theory of one successor (S1S) decidable. The history to program verification also has more steps than the quote suggests. Pnueli (1977) brought temporal logic to reasoning about programs. **Algorithmic model checking** came from Clarke and Emerson (1981) and, independently, Queille and Sifakis (1982), who shared the 2007 Turing Award for it. Vardi and Wolper (1986) then connected LTL to Büchi automata, the *automata-theoretic approach* that Spin uses.
+
 He then describes **Bell Labs' research culture**. "If you hire a hundred really smart people, and just let them do whatever they want, one of them will come up with something that is really important." That bet produced the transistor, the laser, Unix, C, and C++. There was "no requirement to publish," only an annual one-page "**I Am Great Report**." Working next to Ritchie and Thompson was freeing ("There's no way I can compete") and challenging ("There's no excuse for not being able to do the same").
 
 But he insists on **explaining**:
@@ -132,7 +135,7 @@ But he insists on **explaining**:
 >
 > **Definition.** A logic for stating properties of *infinite* execution sequences, introduced to computer science by Amir Pnueli ("The Temporal Logic of Programs," 1977; Turing Award 1996). Its operators include **G** (*globally*: always), **F** (*finally*: eventually), **X** (next), and **U** (until). Examples: `G ¬(crit1 ∧ crit2)` (mutual exclusion, a *safety* property); `G (request → F grant)` (every request is eventually granted, a *liveness* property). LTL formulas can be translated into Büchi automata, which is how Spin checks them.
 >
-> **In the interview.** The application that made omega automata matter. Holzmann credits Pnueli with describing model checking, while noting "He never claimed credit." See Krishnamurthi's safety and liveness (Chapter 2).
+> **In the interview.** The application that made omega automata matter. Holzmann credits Pnueli with describing model checking in a paper ("in 1979"; the founding LTL paper is 1977), while noting "He never claimed credit." Model checking as an algorithm is usually credited to Clarke and Emerson and to Queille and Sifakis; see the note under Theme 4. See Krishnamurthi's safety and liveness (Chapter 2).
 
 > [!NOTE]
 > **KEY TERM: Büchi (omega) automata**

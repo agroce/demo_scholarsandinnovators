@@ -47,7 +47,7 @@ module.exports = {
     "**Main topic: software architecture.** What architecture is and why it matters; a short history; architectural styles (pipe-and-filter, layered, client-server, event-based, repository, microservices); quality attributes and scenarios; architectural tactics; documenting architecture with views; architecture decision records; evaluation; architectural mismatch, drift, and erosion.",
     "**Shorter topic: is software engineering engineering?** The 1968 NATO provocation; Shaw's model of how engineering disciplines mature; licensing, codes, and liability; arguments on both sides.",
   ],
-  why: "Shaw, with David Garlan, created software architecture as a field, and her whole career aims at \"the genuine engineering discipline for software.\" She talks about architectural styles, architecture description languages, frameworks that impose their architectures, and her model of engineering maturity as if you already know them. This primer covers those ideas so you can follow her, and so you can compare the many interviewees' answers to Krishnamurthi's design question with an architect's vocabulary.",
+  why: "Shaw, with David Garlan, helped establish software architecture as a distinct research discipline, and her whole career aims at \"the genuine engineering discipline for software.\" She talks about architectural styles, architecture description languages, frameworks that impose their architectures, and her model of engineering maturity as if you already know them. This primer covers those ideas so you can follow her, and so you can compare the many interviewees' answers to Krishnamurthi's design question with an architect's vocabulary.",
   slides: [
     { type: "section", kicker: "PART 1", title: "Software architecture", subtitle: "The decisions that are expensive to change" },
     {
@@ -65,7 +65,7 @@ module.exports = {
     },
     {
       type: "timeline", title: "A short history of software architecture",
-      events: [["1968", "THE operating system", "Dijkstra's layers"], ["1972", "Parnas", "information hiding (Ch. 3 primer)"], ["1992", "Perry & Wolf", "\"Foundations for the Study of Software Architecture\""], ["1995", "Kruchten's 4+1 views", "and \"Architectural Mismatch\""], ["1996", "Shaw & Garlan", "Perspectives on an Emerging Discipline", true], ["2011", "Architecture decision records", "Michael Nygard"], ["2014", "\"Microservices\"", "Lewis & Fowler"]],
+      events: [["1968", "THE operating system", "Dijkstra's layers"], ["1972", "Parnas", "information hiding (Ch. 3 primer)"], ["1992", "Perry & Wolf", "\"Foundations for the Study of Software Architecture\""], ["1995", "Kruchten's 4+1 views", "and \"Architectural Mismatch\""], ["1996", "Shaw & Garlan", "Perspectives on an Emerging Discipline", true], ["2011", "Architecture decision records", "Michael Nygard"], ["2014", "\"Microservices\"", "Lewis & Fowler's definition (term coined 2011–12)"]],
     },
     {
       type: "compare", title: "Architectural styles, part 1",

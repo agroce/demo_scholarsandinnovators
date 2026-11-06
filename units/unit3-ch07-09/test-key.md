@@ -27,7 +27,7 @@ Distractors: K, L.
 | 14 | d | 19 | a |
 | 15 | c | 20 | b |
 
-Notes: 18 (a) is Schneider, (c) is Yang, (d) is Hoodlet.
+Notes: 16 is a confused-deputy problem: the browser's isolation is intact, but the privileged agent can be steered across it. (b) is the tempting wrong answer. 18 (a) is Schneider, (c) is Yang, (d) is Hoodlet.
 
 ## Part C — what a full-credit answer includes (6 pts each)
 

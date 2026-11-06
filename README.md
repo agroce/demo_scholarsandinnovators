@@ -65,7 +65,7 @@ Each chapter's `notes.md` boxes every important SE term with:
 - **Definition**: a self-contained definition suitable for an upper-division SE course.
 - **In the interview**: how the interviewee uses the term, with quotations, so students connect the vocabulary to the conversation.
 
-The boxes use GitHub's alert syntax (`> [!NOTE]`), so they render as callouts on GitHub. To make PDFs, use pandoc ≥ 3.1 with the `gfm+alerts` input format, or any Markdown-to-PDF tool (the boxes fall back to block quotes).
+The boxes use GitHub's alert syntax (`> [!NOTE]`), so they render as callouts on GitHub. To make PDFs, use pandoc 3.1.10 or later (the first release with the `alerts` extension) with `-f gfm`, where alerts are on by default. Any other Markdown-to-PDF tool also works; the boxes then fall back to block quotes.
 
 ## Rebuilding the slides
 

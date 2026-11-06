@@ -167,22 +167,29 @@ Common pattern: specify the **design** or the **protocol**, not every line of co
 
 **Lightweight**
 
-- **Alloy**, **TLA+** with the TLC model checker, property-based tests against reference models.
+- **Alloy** (SAT-based, within a bounded scope), property-based tests (random or generated inputs) against reference models.
 - Bounded or sampled analysis; no proofs.
 - Hours to days to learn; best for designs and protocols.
 - Finds bugs; can't show absence of all bugs.
 
 **Model checking**
 
-- **Spin** (Holzmann, Ch. 4), TLC, NuSMV, CBMC.
-- Exhaustive over a finite model.
+- **Spin** (Holzmann, Ch. 4), **TLA+** with TLC, NuSMV.
+- Explores every reachable state of a finite model.
 - Temporal properties: safety and liveness (Ch. 9 primer).
 - Limit: state explosion (Ch. 1 primer).
+
+**Bounded checking**
+
+- **CBMC** (Clarke, Kroening, Lerda, 2004); **Kani** for Rust, built on it.
+- Checks the real C code, not a model, for all inputs, with loops unrolled to a bound.
+- Unwinding assertions confirm the bound is enough; then the check is a proof for that code.
+- No invariants to write. AWS ran it in CI on its C libraries (Chong et al., ICSE SEIP 2020).
 
 **Full verification**
 
 - **Dafny**, **Lean**, **Rocq** (Coq), **Isabelle**, F*.
-- Machine-checked proofs for all inputs.
+- Machine-checked proofs for all inputs, relative to the spec and its assumptions (compiler, hardware, environment).
 - Landmarks: seL4 kernel, CompCert compiler.
 - Cost: expertise and proof maintenance (Beck, Ch. 11), now eased by LLMs.
 
@@ -244,6 +251,8 @@ Common pattern: specify the **design** or the **protocol**, not every line of co
 - D. Norman, The Design of Everyday Things (revised ed.), Basic Books, 2013.
 - E. Evans, Domain-Driven Design, Addison-Wesley, 2003.
 - C. Newcombe et al., "How Amazon Web Services Uses Formal Methods," CACM, 2015.
+- N. Chong et al., "Code-Level Model Checking in the Software Development Workflow," ICSE-SEIP, 2020.
+- E. Clarke, D. Kroening, F. Lerda, "A Tool for Checking ANSI-C Programs," TACAS, 2004.
 - P. Zave, "Using Lightweight Modeling to Understand Chord," ACM SIGCOMM CCR, 2012.
 - L. Lamport, Specifying Systems, Addison-Wesley, 2002 (free online).
 - J. Woodcock, P. G. Larsen, J. Bicarregui, J. Fitzgerald, "Formal Methods: Practice and Experience," ACM Computing Surveys, 2009.

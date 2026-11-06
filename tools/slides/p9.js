@@ -110,7 +110,7 @@ module.exports = {
       ],
       callout: { label: "The lesson for software", text: "Replicating identical software tolerates hardware crashes but not bugs: every replica has the same bug. Tolerating design faults needs real diversity, and even then less than you'd hope. Assurance (proof, testing, review) remains essential." },
     },
-    { type: "diagram", title: "The state machine approach to replication", ...smr, caption: "Model the service as a **deterministic state machine**. If every replica starts in the same state and processes the same requests in the same order, every correct replica produces the same outputs. Agreeing on the order is the hard part: Lamport's logical clocks, then consensus protocols such as Paxos and Raft. Schneider's 1990 tutorial is the standard reference.", mdDiagram: "Clients → [agree on one order of requests (consensus)] → Replica 1, Replica 2, Replica 3 (crashed)\n        → outputs: take any (crash faults) or majority vote (Byzantine)" },
+    { type: "diagram", title: "The state machine approach to replication", ...smr, caption: "Model the service as a **deterministic state machine**. Replicas that start in the same state and process the same requests in the same order produce the same outputs. Agreeing on that order despite failures is the hard part: Lamport's logical clocks order events by causality but don't tolerate failures, so it takes **consensus** (Paxos, Raft). Schneider's 1990 tutorial is the standard reference.", mdDiagram: "Clients → [agree on one order of requests (consensus)] → Replica 1, Replica 2, Replica 3 (crashed)\n        → outputs: take any (crash faults) or majority vote (Byzantine)" },
     {
       type: "timeline", title: "Fault-tolerant distributed computing",
       events: [["1956", "von Neumann", "reliable machines from unreliable parts"], ["1978", "Lamport clocks", "ordering without a global clock"], ["1982", "Byzantine Generals", "Lamport, Shostak, Pease"], ["1985", "FLP impossibility", "no deterministic consensus with one crash, asynchronously"], ["1988", "Viewstamped Replication", "Oki & Liskov", true], ["1990", "State machine approach", "Schneider's tutorial", true], ["1998–2014", "Paxos; Raft", "consensus in practice"]],
@@ -119,7 +119,7 @@ module.exports = {
       type: "text", title: "Limits: what distributed systems can't do",
       body: [
         "- **FLP impossibility** (Fischer, Lynch, Paterson, 1985): in a fully asynchronous system, no deterministic protocol can guarantee consensus if even one process may crash. Practical protocols escape with timeouts, randomness, or partial synchrony, guaranteeing safety always and liveness only when the network behaves.",
-        "- **CAP** (Brewer, 2000; proved by Gilbert and Lynch, 2002): during a network **partition**, a replicated store must give up either **consistency** (all replicas agree) or **availability** (every request gets an answer).",
+        "- **CAP** (Brewer, 2000; proved by Gilbert and Lynch, 2002): during a network **partition**, a replicated store must give up either **consistency** (in Gilbert and Lynch's proof, _linearizability_: every operation appears to take effect atomically at one instant between its call and return, so reads see the latest completed write) or **availability** (every request to a non-failed node eventually gets a response).",
         "- **End-to-end argument** (Saltzer, Reed, Clark, 1984): correctness checks that depend on the application belong at the endpoints, not only in lower layers.",
       ],
       callout: { label: "Safety vs. liveness again", text: "Consensus protocols such as Paxos are designed so that **safety** (never decide two different values) holds no matter what, while **liveness** (eventually decide) holds only under good conditions. That is the safety/liveness split Schneider helped formalize, used as a design rule." },
@@ -159,7 +159,7 @@ module.exports = {
     {
       type: "text", title: "Information flow and noninterference",
       body: [
-        "Access control limits who may _read_ data. It says nothing about what they do with it afterwards.",
+        "Access control decides which principals may perform which operations (read, write, execute, delete) on which resources. Once a read is allowed, it says nothing about where the information goes next. **Information flow control** constrains that propagation.",
         "- **Denning** (1976) modeled security classes as a **lattice** and asked which flows between classes a program performs, including **implicit** flows through branches.",
         "- **Goguen and Meseguer** (1982) defined **noninterference**: high-security inputs have no effect on low-security outputs. Two runs that differ only in secrets must look the same to a low observer.",
         "- **Covert channels**: timing, resource usage, and error behavior can leak information even when data paths are controlled.",

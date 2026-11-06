@@ -70,12 +70,12 @@ Write the letter of the best definition next to each term. Each letter is used a
 - (c) is accepted by people without the knowledge, review, or assurance needed to judge it
 - (d) is always less efficient than human code
 
-**16.** Hoodlet's example of an agentic browser stealing a wallet recovery key shows that an AI with access to every tab defeats:
+**16.** In Hoodlet's example, an agentic browser summarizing one web page is prompt-injected into stealing a wallet recovery key from another tab. What is the core security problem?
 
-- (a) the isolation between sites that browsers enforce
-- (b) the browser's spell checker
-- (c) DNS
-- (d) TLS certificate validation
+- (a) The agent acts with the user's authority on every site, so injected text can steer it across the isolation the browser still enforces
+- (b) The page's scripts exploit a bug in the browser's same-origin checks to read data from the other tab directly
+- (c) The agent's model weights were poisoned during training, so it leaks secrets whenever it sees a wallet page
+- (d) The summarized page disabled TLS certificate validation, letting an attacker intercept the recovery key in transit
 
 **17.** Schneider explains Agile development as:
 

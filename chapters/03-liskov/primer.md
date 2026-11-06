@@ -214,7 +214,7 @@ SOLID is a mnemonic, not a theory; treat it with Kernighan's hype-cycle skeptici
 - **Unix (1970s)**: small programs composed with **pipes**. Text streams are the universal interface (see the Chapter 6 primer).
 - **Package ecosystems**: CPAN (1995), Maven, npm, PyPI, crates.io. Reuse at enormous scale, with **semantic versioning** to signal interface changes.
 - **Dependency risk**: the 2016 npm `left-pad` incident (an 11-line package unpublished, breaking thousands of builds) and supply-chain attacks such as the 2024 xz backdoor. Every module you use is code you trust (Krishnamurthi's "means of verification," Chapter 2).
-- **Services and microservices** (around 2014): modules become separately deployed processes communicating over a network. Strong encapsulation, but distributed-systems failure modes (Liskov's other career).
+- **Services and microservices** (term coined 2011–12; popularized by Lewis and Fowler, 2014): modules become separately deployed processes communicating over a network. Strong encapsulation, but distributed-systems failure modes (Liskov's other career).
 
 > **Modularity as economics.** Baldwin and Clark (_Design Rules_, 2000) argue that modular designs create **option value**: each module can be improved or replaced independently. That's why modular industries (PCs, software packages) evolve so fast.
 
@@ -244,7 +244,7 @@ Module boundaries tend to mirror **team** boundaries. Three teams building a com
 - **1987** — Liskov's OOPSLA keynote: behavioral subtyping
 - **1994** — Design Patterns: "favor composition"
 - **1995** — Java: interfaces, packages, CPAN era
-- **2014** — Microservices: modules as services
+- **2014** — Microservices: Lewis & Fowler: modules as services
 
 ## Check yourself before reading Chapter 3
 

@@ -1,10 +1,10 @@
 module.exports = {
   num: 10, name: "Mary Shaw", shortName: "Mary Shaw",
   subtitle: "A Discipline of Engineering for Software as Holy Grail",
-  titleNotes: "Alan J. Perlis Professor of Computer Science, Carnegie Mellon. With David Garlan, founded the systematic study of software architecture. Chief Scientist of the SEI 1984–87. ACM SIGSOFT Outstanding Research Award (2011, with Garlan); U.S. National Medal of Technology and Innovation (2014).",
+  titleNotes: "Alan J. Perlis Professor of Computer Science, Carnegie Mellon. With David Garlan, helped establish software architecture as a distinct research discipline (as did Perry and Wolf, 1992). Chief Scientist of the SEI 1984–87. ACM SIGSOFT Outstanding Research Award (2011, with Garlan); U.S. National Medal of Technology and Innovation (2014).",
   about: [
     "Alan J. Perlis Professor of Computer Science, Carnegie Mellon",
-    "Co-founded software architecture as a field, with David Garlan",
+    "With David Garlan, helped establish software architecture as a discipline",
     "Chief Scientist, Software Engineering Institute, 1984–87",
     "ACM SIGSOFT Outstanding Research Award (2011)",
     "National Medal of Technology and Innovation (2014)",
@@ -147,7 +147,7 @@ module.exports = {
         "Change the cost structure: make vendors liable",
       ],
       quote: "If the purveyors of software were held liable for the failures of the software, then that would change their risk profile.",
-      notes: "Toyota: Koopman found Toyota 'were supposed to be doing X, Y, and Z, but by golly, they weren't.' CrowdStrike: 'They didn't do a preliminary release with just a few people???' Shaw says 'Cloudstrike' in the transcript.",
+      notes: "Toyota: Koopman found Toyota 'were supposed to be doing X, Y, and Z, but by golly, they weren't.' CrowdStrike: 'They didn't do a preliminary release with just a few people???' Shaw says 'Cloudstrike' in the transcript. Her 'corrupted table interpreted as addresses' is close: CrowdStrike's RCA found the sensor supplied 20 inputs to a template expecting 21, so Channel File 291 caused an out-of-bounds read in the kernel.",
       terms: [
         ["Liability & disclaimers", "Licenses disclaim implied warranties of merchantability and fitness, so vendors bear little cost for defects.", "\"Change their risk profile.\""],
         ["Brooks's factors of three", "Program → programming system → programming product: about 3x each, so about 9x overall.", "\"There's one of your factors of three.\""],

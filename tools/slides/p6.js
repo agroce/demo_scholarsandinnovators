@@ -97,7 +97,7 @@ module.exports = {
         "- Small, named transformations: _Extract Function_, _Rename Variable_, _Replace Conditional with Polymorphism_, _Introduce Parameter Object_.",
         "- **Code smells** suggest where to refactor: duplicated code, long functions, large classes, long parameter lists, feature envy.",
         "- **Tests make it safe**: you can only claim behavior didn't change if something checks behavior.",
-        "- **IDEs automate** many refactorings, guaranteeing they preserve behavior (mostly).",
+        "- **IDEs automate** many refactorings and try to preserve behavior for the transformations and language features they support. Reflection, dynamic dispatch by name, and code generated or loaded at run time can still break.",
         "Refactoring is how teams fight Lehman's law of increasing complexity, and how XP's \"simple design\" stays simple.",
       ],
       callout: { label: "In the book", text: "Zeller (Ch. 5) credits research for helping teams be \"faster in refactoring things\" and keep a prototype's \"internal structure\" from going \"down the drain.\"" },

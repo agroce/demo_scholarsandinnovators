@@ -82,7 +82,7 @@ module.exports = {
         "Pre-2000s: \"let's get it out the door now\"",
       ],
       quote: "It's a velocity problem, and unless you have robust testing, everything is slow.",
-      notes: "Thermo Fisher's device sequenced the first SARS-CoV-2 sample at Wuhan University in December 2019. Old devices still matter.",
+      notes: "Hoodlet recalls that the first device used to sequence SARS-CoV-2, at Wuhan University in December 2019, was a Thermo Fisher instrument (his recollection; early genomes were sequenced on several platforms). Old devices still matter.",
       terms: [
       ],
     },
@@ -131,12 +131,12 @@ module.exports = {
         "Prompt injection stole a wallet recovery key from another tab",
       ],
       quote: "If you put an AI in the middle of all your browser tabs, you now have an oracle, and if you can prompt-inject that oracle, you get rid of same-site policy.",
-      notes: "The standard term is same-origin policy. 'The Attacker Moves Second' (Nasr, Carlini, et al., 2025): adaptive attacks defeated all prompt-injection defenses tested. Patching the system prompt is 'whack-a-mole.'",
+      notes: "The standard term is same-origin policy. 'The Attacker Moves Second' (Nasr, Carlini, et al., 2025): adaptive attacks defeated all prompt-injection defenses tested. Patching the system prompt is 'whack-a-mole.' Strictly, the browser's isolation still works; the agent acts with the user's authority in every tab, so prompt injection makes it a confused deputy that bypasses the isolation.",
       terms: [
         ["Security poverty line", "Wendy Nather's term: the resource level below which an organization can't afford effective security.", "Miessler's blog."],
         ["CodeQL", "Static analysis that queries code as a database for vulnerability patterns (from Semmle, acquired by GitHub).", "Used across Microsoft's code."],
         ["Prompt injection", "Instructions hidden in data an LLM reads override its intended instructions. Any untrusted text can act as code.", "\"Whack-a-mole.\""],
-        ["Same-origin policy", "Scripts from one origin can't read another's data; backed by per-site process isolation.", "Erased by an AI in every tab."],
+        ["Same-origin policy", "Scripts from one origin can't read another's data; backed by per-site process isolation.", "Bypassed by an AI agent in every tab."],
       ],
     },
     {
@@ -144,12 +144,12 @@ module.exports = {
       title: "Methodology: \"I would say it depends\"",
       points: [
         "Research-use-only devices: lenient patch timelines",
-        "Diagnostic (IVD) devices: patch or mitigate in 60 days, or recall",
+        "Diagnostic (IVD) devices, as he recalls it: patch or mitigate in 60 days, or recall",
         "Air-gapped, patched yearly by USB: \"waterfall is just fine\"",
         "Web apps: speed matters by what's at stake (forum vs. Bitcoin)",
       ],
       quote: "If you're building a device and you patch it once a year with a software update, and it's in an air-gapped environment where no meaningful changes will happen to it in the period between, sure, waterfall is just fine.",
-      notes: "Regulatory details were as of about six years before the interview. Compare Boehm and Turner's home grounds (Ch. 2 primer) and Groce's NASA example.",
+      notes: "Regulatory details were as of about six years before the interview, and are his summary. FDA's 2016 postmarket cybersecurity guidance is nonbinding: a fix shipped within 60 days (with customer notice and compensating controls within 30) could skip a Part 806 correction report; it did not make recall automatic. Compare Boehm and Turner's home grounds (Ch. 2 primer) and Groce's NASA example.",
       terms: [
         ["Risk-based process selection", "Choose practices by consequences of failure, threats, and update constraints, not fashion.", "RUO vs. IVD; forum vs. Bitcoin."],
         ["Air gap", "Physical isolation from untrusted networks. Smaller attack surface, slow manual updates, not absolute (Stuxnet).", "\"A patch on a USB.\""],

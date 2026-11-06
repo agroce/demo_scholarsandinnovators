@@ -49,7 +49,7 @@ Distractors: K, L.
 
 **(b)** (4) Use the failing body as input. Define `test(input)` → FAIL if the service *crashes in the same way* (same exception/stack signature), PASS if it doesn't crash, UNRESOLVED if the input is malformed for other reasons (or use a JSON-aware / hierarchical reduction so candidates stay valid). Run ddmin to get a 1-minimal body and add it as a regression test. Key property: the test function must check for the *same* failure, or the reduction drifts to a different bug.
 
-**(c)** (3) Introduced: **requirements**. Detected: **testing/operations** (by a fuzzer). Earlier check: a requirements review checklist for input encodings (Unicode normalization, length in bytes vs. characters), or a requirements-phase test-case derivation that includes Unicode inputs.
+**(c)** (3) Introduced: **requirements**. Detected: **testing** (by a fuzzer). Earlier check: a requirements review checklist for input encodings (Unicode normalization, length in bytes vs. characters), or a requirements-phase test-case derivation that includes Unicode inputs.
 
 **(d)** (3) For example: "Usernames may contain any printable Unicode character; note that visually identical names (é vs. e + ◌́) are treated as different users." Writing it down exposes the impersonation and normalization problem. Credit any sentence that makes the hidden design question visible.
 

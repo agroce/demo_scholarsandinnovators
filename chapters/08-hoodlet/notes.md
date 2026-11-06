@@ -142,7 +142,7 @@ Tools have changed too. Compilers offer "address sanitization, for example." Fuz
 
 ## Theme 5: Testing is a security velocity problem
 
-At Thermo Fisher, some lab instruments were 20, 30, or 40 years old and still in use. (The first device used to sequence SARS-CoV-2, at Wuhan University in December 2019, was a Thermo Fisher instrument.) His advice to every team: "if your testing is robust, your ability to make security updates quickly and easily without breaking things is going to be that much faster. It's a velocity problem, and unless you have robust testing, everything is slow."
+At Thermo Fisher, some lab instruments were 20, 30, or 40 years old and still in use. He adds that "the very first device that was used to sequence SARS-CoV-2 was a Thermo Fisher device at Wuhan University" in December 2019. (Treat this as his recollection. Early SARS-CoV-2 genomes were sequenced on several platforms, and we could not confirm which instrument came first.) His advice to every team: "if your testing is robust, your ability to make security updates quickly and easily without breaking things is going to be that much faster. It's a velocity problem, and unless you have robust testing, everything is slow."
 
 He credits test-driven development and DevOps for that change: "now you have tests in your CI/CD that need to pass before you get to production." In the 1990s and early 2000s, "testing was a lot less of a focus area."
 
@@ -277,13 +277,16 @@ His current example: **agentic browsers**, where an AI assistant can read and ac
 >
 > **Definition.** The browser's core security rule: scripts from one *origin* (scheme, host, port) cannot read data from another origin. Modern browsers back it with **process isolation**, running sites in separate operating-system processes so that even a compromised renderer can't read another site's memory (Chrome's Site Isolation, 2018).
 >
-> **In the interview.** A prompt-injected agent gets rid of "same-site policy" and "process isolation between browser tabs." (The standard term is *same-origin* policy; "same-site" is a related, looser notion used for cookies.)
+> **In the interview.** A prompt-injected agent gets rid of "same-site policy" and "process isolation between browser tabs." (The standard term is *same-origin* policy; "same-site" is a related, looser notion used for cookies.) Strictly, the browser's mechanisms still work: no script crosses an origin boundary. The agent sits *above* them, acting with the user's authority in every tab, so injected text on one site can steer it into reading or acting on another. That is a **confused deputy** problem: the isolation is bypassed rather than broken, which is why patching the system prompt is "whack-a-mole."
 
 ---
 
 ## Theme 11: Methodology — "it depends"
 
 "In true expert fashion, I would say it depends," on the software and on how often it needs an update. Thermo Fisher had both e-commerce sites and decades-old, unnetworked lab devices. Medical devices fell into two regulatory classes: **research use only (RUO)**, with lenient patch timelines, and **in vitro diagnostics (IVD)**, where "the potential for patient harm" is higher and "you had 60 days to patch or mitigate, otherwise you had to do a full recall" (as of about six years before the interview).
+
+> [!NOTE]
+> **Instructor note.** Hoodlet is describing how his company's regulated teams worked, compressed into one rule. The source is FDA's nonbinding guidance *Postmarket Management of Cybersecurity in Medical Devices* (December 2016). For a vulnerability posing an *uncontrolled* risk to patients, a fix counts as a device **correction**, which normally must be reported to FDA under 21 CFR Part 806 (the recall-reporting rule). FDA said it would not enforce that reporting if the manufacturer told customers and put compensating controls in place within 30 days, shipped a validated fix within 60 days, had no serious adverse events, and took part in an information-sharing organization (ISAO). So 60 days was the window for handling a fix as routine maintenance rather than a reported correction, not an automatic recall trigger. The gap between the rule and how practitioners remember it is itself worth discussing.
 
 For a device patched once a year in an air-gapped environment, "sure, waterfall is just fine." For internet-facing web apps, "speed can really matter," and how much depends on what an attacker could gain: names and emails on a forum, or millions on a Bitcoin platform.
 

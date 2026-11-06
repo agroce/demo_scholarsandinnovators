@@ -109,7 +109,7 @@ module.exports = {
       body: [
         "- **Symbolic model checking** (Ken McMillan, early 1990s): represent huge sets of states compactly with binary decision diagrams (BDDs). It made hardware verification industrial.",
         "- **Partial order reduction** (Peled, Godefroid, Valmari): skip redundant orderings of independent concurrent actions. It is built into Spin (Ch. 4).",
-        "- **Bounded model checking** (Biere, Cimatti, Clarke, Zhu, 1999): unroll the system _k_ steps and ask a **SAT solver** whether a bug is reachable. Ball: \"the SAT solvers were getting better.\"",
+        "- **Bounded model checking** (Biere, Cimatti, Clarke, Zhu, 1999): unroll the system _k_ steps and ask a **SAT solver** whether a bug is reachable. **CBMC** (Clarke, Kroening, Lerda, 2004) does this directly on C code. Ball: \"the SAT solvers were getting better.\"",
         "- **Abstraction and refinement (CEGAR)**: check a simplified model. If its counterexample is spurious, refine the abstraction and repeat. SLAM's **predicate abstraction** is the software version.",
         "- **SMT solvers** (Z3, Yices, CVC): SAT plus theories of integers, arrays, and bit-vectors. Now the engine under symbolic execution, verifiers like Dafny, and much more.",
       ],

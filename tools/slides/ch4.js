@@ -78,7 +78,7 @@ module.exports = {
         "Yet explaining matters: papers, teaching, and above all the manual",
       ],
       quote: "Perhaps the most important part is writing the manual. Because once you have to explain how something works to a stranger, you sometimes realize, this is really stupid.",
-      notes: "On Bell Labs: 'There's no way I can compete with Dennis Ritchie or Ken Thompson... There's no excuse for not being able to do the same.' On Dijkstra: brilliant, articulate, 'quite annoying,' and only worked on what he could do better than anyone.",
+      notes: "On Bell Labs: 'There's no way I can compete with Dennis Ritchie or Ken Thompson... There's no excuse for not being able to do the same.' On Dijkstra: brilliant, articulate, 'quite annoying,' and only worked on what he could do better than anyone. History check: Büchi (1962) used his automata to decide S1S, an application in logic; Pnueli (1977) brought temporal logic to programs; algorithmic model checking is Clarke–Emerson (1981) and Queille–Sifakis (1982); Vardi–Wolper (1986) linked LTL to Büchi automata.",
       terms: [
         ["Linear temporal logic (LTL)", "Pnueli (1977): logic over infinite runs with G (always), F (eventually), X, U. Example: G(request → F grant). Model checkers translate LTL into automata.", "The application that made omega automata matter."],
         ["Büchi (omega) automata", "Automata over infinite words that accept if an accepting state repeats infinitely often (Büchi, 1962). The core of automata-theoretic model checking.", "Theory with 'zero applications' for years."],
