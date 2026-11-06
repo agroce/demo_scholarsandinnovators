@@ -62,7 +62,8 @@ belief, here:
 * Finally, while there is a surprising amount of agreement between
   people from different camps (note that the last two chapters of this
   text offer very different opinions about the overall goodness of
-  agile practices, for example), this book does not present software
+  agile practices, for example, but also agree on a number of
+  surprising matters, including certain virtues of agile ideas), this book does not present software
   engineering as a finished, dull, matter.  The ideas here are
   complicated and there is a lot to think about; very intelligent
   people are still not sure how to go about things, or what evidence
