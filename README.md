@@ -8,74 +8,72 @@ This repository offers a way to transform my book, *Scholars &
 Innovators in Modern Programming*, into a **full course on software
 engineering** that covers the core of the field (roughly, the
 SWEBOK knowledge areas), and covers some critical, enduring topics in considerable depth.  You may
-think of it as a "mixin" that takes the book and turns it into a
+think of it as a "mixin," a component that adds new behavior to
+something without modifying it: it takes the book and turns it into a
 one-semester course on software engineering.  I think it's a good
-course, and I would like to offer a few reasons for that belief, here:
+course, and I would like to offer a few reasons for that belief:
 
 * Most software engineering textbooks and curricula offer up ideas from software
   engineering as a menagerie of definitions, loosely connected by
-  some kind of 
-  relevance to making (large-scale) software: you walk through the
+  some kind of
+  relevance to making mid- and large-scale software: you walk through the
   zoo, gawking first at waterfall (bad) and agile (maybe good), then
   at UML, and unit tests, and maybe a small exhibit with REST and the
   cloud and GitHub all sitting around grooming each other.  This book differs from
   that practice in two ways.  First, every idea visited is grounded in
-  at least one *person* who helped shape that idea (in some cases, to the extent
-  of winning a Turing Award or other major accolade of our community
-  for it) or popularize it in the field.  Teaching data structures or
-  algorithms or programming language basics as if red-black trees,
+  at least one *person* who helped shape that idea (in some cases
+  winning a Turing Award or other major accolade of our community
+  for it) or popularize it in the field.  Teaching data structures,
+  algorithms, or programming language basics as if red-black trees,
   switch statements, and arrays were found lying about on the
-  ground may work fine; software engineering is more about the learned
+  ground may work fine; however, software engineering is more about the learned
   experience of people who tried to figure out how to build complex
   systems and understand them, and the ideas are less "facts" than
   arguments and beliefs.  Second, this book connects all these ideas
   together by certain common themes:  how do we organize software?
   how do we know what we want a software system to do?  how do we know
   if, in fact, it does those things?  And, more concretely and
-  centrally for software engineering as a discipline, how much
-  planning up front and how much testing and checking along the way,
-  do we want?
-  
-* This connects to a further goal: to be modestly "AI-proof" or at
-  least "AI-durable" for five to ten years.  Many software engineering
-  texts are closely coupled to our current practices (or the practices
-  of a few years ago) of software development, where humans write
-  almost all the code, and the particular management practices of
-  large companies and projects are central.  The agentic/LLM world
-  upends all this, but it does not upend questions such as "what did
-  we want to build?  how do we know we built it?  how do we split it
-  up into parts, and how do we glue those parts together so changing
-  one part doesn't break the whole thing?  when should we plan
-  and when should we wing it and look at what we got?"  I claim that
-  even if humans were entirely absent from the loop, and software
-  systems were developed for the inscrutable purposes of artificial
-  intelligences, such as producing paperclips, many of the questions
-  this course addresses would still be important to software
-  development.  Formulas for scheduling and budgeting were developed
-  for a world where humans must write every line of code. They also
-  assume most code is original, when most code that actually runs is
-  drawn from libraries and frameworks described, if at all, in an
-  SBOM. Such formulas are unlikely to survive. The ideas emphasized here are
-  meant to survive and be important whatever the future holds in store
-  for the shape and origin of software, within reasonable limits.
-  
+  centrally for software engineering as a discipline, how much do we
+  plan up front, and how much do we test and check along the way?
+
+* This connects to a further goal: to be "AI-durable" for five to ten
+  years.  Many software engineering texts are closely coupled to
+  recent, or already outdated, practices of software development,
+  where humans write almost all the code, and the particular
+  management practices of large companies and projects are central.
+  The agentic/LLM world upends all this, but it does not upend
+  questions such as "what did we want to build?  how do we know we
+  built it?  how do we split it up into parts, and how do we glue
+  those parts together so changing one part doesn't break the whole
+  thing?  when should we plan and when should we wing it and look at
+  what we got?"  I claim that even if humans were entirely absent from
+  the loop, and software systems were developed for the inscrutable
+  purposes of artificial intelligences, such as producing paperclips,
+  many of the questions this course addresses would still be important
+  to software development.  Models for scheduling and budgeting were
+  developed for a world where humans must write every line of code.
+  They also assume most code is original, when most code that actually
+  runs is drawn from libraries and frameworks described, if at all, in
+  an SBOM.  Such models are unlikely to survive.  The ideas emphasized
+  here are meant to outlast them: to remain relevant, within
+  reasonable limits, whatever the future holds for the shape and
+  origin of software.
+
 * Finally, while there is a surprising amount of agreement between
-  people from different camps (note that the last two chapters, Kent
-  Beck's and Daniel Jackson's, offer very different opinions about the
-  overall goodness of agile practices, for example, but also agree on
-  a number of surprising matters, including certain virtues of agile
-  ideas and of specification and checking), this book does not present
-  software engineering as a finished, dull matter.  The ideas here
-  are complicated and there is a lot to think about; very intelligent
-  people are still not sure how to go about things, or what evidence
-  we have for different practices.  Software engineering is a lively,
-  living field, shaped by very smart people thinking hard about very
-  hard problems with no simple, mathematical answers subject to proof
-  or refutation.  Students, even undergraduates, need to understand
-  this if they are to be responsible, intelligent, capable software
-  engineers, whatever the role of software engineer may entail in the
-  future.
-  
+  people from different camps, this book does not present software
+  engineering as a settled, dull matter.  Kent Beck and Daniel
+  Jackson agree on a number of points, including certain virtues of
+  agile ideas and of specification and checking, yet offer very
+  different opinions about the overall value of agile practices.
+  Software engineering is a lively, living field, shaped by very smart
+  people thinking hard about very hard problems with no simple,
+  mathematical answers subject to proof or refutation.  The ideas here
+  are complicated, and there is a lot to think about, including what
+  evidence we really have for different practices.  Students, even
+  undergraduates, need to understand this if they are to be
+  responsible, intelligent, capable software engineers, whatever the
+  role of software engineer may entail in the future.
+
 Alex Groce
 
 Flagstaff, Arizona
