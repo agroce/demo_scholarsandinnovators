@@ -163,3 +163,7 @@ If this repository is public, students can read the quiz and test keys. Instruct
 ## License
 
 Course materials are licensed CC BY 4.0, and the code in `tools/` is MIT licensed. Quotations from the interviews remain under the book's copyright. See `LICENSE.md` for details.
+
+## Beyond the book
+
+Two freely available books make good companions to this course, from opposite directions. Amy Ko's [*Cooperative Software Development*](https://faculty.washington.edu/ajko/books/cooperative-software-development/) (free online) covers what day-to-day software engineering work is like now: teams, communication, and process, the texture of working life that the interviews mostly take for granted. Tomas Petricek's [*Cultures of Programming*](https://tomasp.net/cultures/) (Cambridge University Press, 2026; open access) is more academic and occasionally esoteric, but it is the best big-picture history and epistemology of programming I know: it reads the field's development as an interaction among mathematical, hacker, engineering, managerial, and humanistic cultures, which is a useful lens for the disagreements among the interviewees in this book.
