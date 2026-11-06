@@ -1,6 +1,74 @@
 # Scholars & Innovators in Modern Programming — Classroom Materials
 
-Companion materials for *Scholars & Innovators in Modern Programming* (Alex Groce, Apress), for instructors and students using the book in software engineering courses.
+Companion materials for *Scholars & Innovators in Modern Programming*
+(Alex Groce, Apress), for instructors and students using the book in
+software engineering courses.
+
+#READ THIS FIRST
+
+This repository offers a way to transform my book,  *Scholars &
+Innovators in Modern Programming*, into a course on software
+engineering.  You may think of it as a "mixin" that takes the book and
+turns it into a one-semester course on software engineering.  I think
+it's a good course, and I would like to offer a few reasons for that
+belief, here:
+
+* Most software engineering textbooks and curricula offer up ideas from software
+  engineering as a *smorgasbord* of definitions, loosely connected by
+  some kind of 
+  relevance to making (large-scale) software: you walk through the
+  zoo, gawking first at waterfall (bad) and agile (maybe good), then
+  at UML, and unit tests, and maybe a small exhibit with REST and the
+  cloud and GitHub all sitting around grooming each other.  This book differs from
+  that practice in two ways.  First, every idea visited is grounded in
+  at least one *person* who helped shape that idea (in some cases, to the extent
+  of winning a Turing award or other major accolade of our community
+  for it) or popularize it in the field.  Teaching data structures or
+  algorithms or programming language basics as if red-black trees,
+  switch statements, and arrays were found lying about on the
+  ground may work fine; software engineering is more about the learned
+  experience of people who tried to figure out how to build complex
+  systems and understand them, and the ideas are less "facts" than
+  arguments and beliefs.  Second, this book connects all these ideas
+  together by certain common themes:  how do we organize software?
+  how do we know what we want a software system to do?  how do we know
+  if, in fact it does those things?  And, more concretely and
+  centrally for software engineering as a discipline, how much
+  planning up front and how much testing and checking along the way,
+  do we want?
+  
+* This connects to a second goal of this course: to be "AI-proof."
+  Many software engineering texts are closely coupled to our current
+  practices (or the practices of a few years ago) of software
+  development, where humans write almost all the code, and the
+  particular management practices of large companies and projects are
+  central.  The agentic/LLM world upends all this, but it does not
+  upend questions such as "what did we want to build?  how do we know
+  we built it?  when should we plan and when should we wing it and
+  look at what we got?"  I claim that even if humans were entirely
+  absent from the loop, and software systems were developed for the
+  inscrutable purposes of artificial intelligences, such as producing
+  paperclips, many of the questions this course addresses would still
+  be important to software development.
+  
+* Finally, while there is a surprising amount of agreement between
+  people from different camps (note that the last two chapters of this
+  text offer very different opinions about the overall goodness of
+  agile practices, for example), this book does not present software
+  engineering as a finished, dull, matter.  The ideas here are
+  complicated and there is a lot to think about; very intelligent
+  people are still not sure how to go about things, or what evidence
+  we have for different practices.  Software engineering is a lively,
+  living, field, shaped by very smart people thinking hard about very
+  hard problems with no simple, mathematical answers subject to proof
+  or refutation.  Students, even undergraduates, need to understand
+  this if they are to be responsible, intelligent, capable software
+  engineers, whatever the role of software engineer may entail in the
+  future.
+  
+Alex Groce
+Flagstaff, Arizona
+November 2026
 
 ## What's here
 
