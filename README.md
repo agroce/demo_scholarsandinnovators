@@ -43,7 +43,9 @@ course, and I would like to offer a few reasons for that belief, here:
   almost all the code, and the particular management practices of
   large companies and projects are central.  The agentic/LLM world
   upends all this, but it does not upend questions such as "what did
-  we want to build?  how do we know we built it?  when should we plan
+  we want to build?  how do we know we built it?  how do we split it
+  up into parts, and how do we glue those parts together so changing
+  one part doesn't break the whole thing?  when should we plan
   and when should we wing it and look at what we got?"  I claim that
   even if humans were entirely absent from the loop, and software
   systems were developed for the inscrutable purposes of artificial
