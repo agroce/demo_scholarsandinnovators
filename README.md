@@ -4,7 +4,7 @@ Companion materials for *Scholars & Innovators in Modern Programming*
 (Alex Groce, Apress), for instructors and students using the book in
 software engineering courses.
 
-#READ THIS FIRST
+## READ THIS FIRST
 
 This repository offers a way to transform my book,  *Scholars &
 Innovators in Modern Programming*, into a course on software
