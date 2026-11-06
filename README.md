@@ -158,7 +158,13 @@ Each `chN.js` file holds that chapter's slide content: themes, quotes, term defi
 
 ## A note on answer keys
 
-If this repository is public, students can read the quiz and test keys. Instructors who reuse questions for grading may want to keep keys in a private copy.
+If this repository is public, students can read the quiz and test
+keys. Instructors who reuse questions for grading may want to keep
+keys in a private copy, but of course the ones I offer are visible in
+this repo. In general, I offer these quizzes and tests as
+examples of the kinds of questions you can ask; the best practice is
+to derive your own, perhaps asking a friendly LLM to help, for your
+own course.
 
 ## License
 
